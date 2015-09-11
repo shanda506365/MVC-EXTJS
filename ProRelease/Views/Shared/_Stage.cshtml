@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>@RenderSection("TitleContent", required: false)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="Rating" content="General" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="陵园系统" />
+    <link rel="Shortcut Icon" href="~/Content/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="~/Content/javascript/ext4/resources/css/ext-all.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/style/viewPortCss.css" />
+    <style type="text/css">
+        .x-toolbar-item
+        {
+            font: 12px/20px Tahoma,Verdana,Arial,sans-serif;
+        }
+
+        body
+        {
+            font: 12px/20px Tahoma,Verdana,Arial,sans-serif;
+        }
+
+        .x-grid-cell-inner
+        {
+            font: 12px/20px Tahoma,Verdana,Arial,sans-serif;
+        }
+
+        .x-panel-header-text-default
+        {
+            color: #04408C;
+            font: 12px/20px Tahoma,Verdana,Arial,sans-serif;
+            font-weight: bold;
+            line-height: 17px;
+        }
+
+        .x-window-header-text-default
+        {
+            color: #04468C;
+            font: 12px/20px Tahoma,Verdana,Arial,sans-serif;
+            font-weight: bold;
+            line-height: 17px;
+        }
+
+        .x-component-default
+        {
+            font: 12px/20px Tahoma,Verdana,Arial,sans-serif;
+        }
+
+        .x-menu-item-text
+        {
+            font: 12px/20px Tahoma,Verdana,Arial,sans-serif;
+        }
+        /* Text items */
+        .big-text .x-toolbar-text
+        {
+            font-size: 24px;
+        }
+        /* Button text */
+        .big-text .x-btn-default-toolbar-small .x-btn-inner
+        {
+            font-size: 24px;
+        }
+        /*.x-item-disabled {
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+				opacity:  0.8;
+				color:gray;
+			}*/
+    </style>
+    @RenderSection("HeadContent", required: false)
+    @RenderSection("StyleContent", required: false)
+    <script type="text/javascript" src="~/Content/javascript/ext4/ext-all-debug.js"></script>
+    @*加载国际化初始类*@
+    <script type="text/javascript" src="~/Content/javascript/config/locale.js"></script>
+    @*加载公共配置类*@
+    <script type="text/javascript" src="~/Content/javascript/config/GlobalConfig.js"></script>
+    @*加载公共方法类*@
+    <script type="text/javascript" src="~/Content/javascript/config/GlobalFun.js"></script>
+    @*加载表格基础类*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/BaseGrid.js"></script>
+    @*加载树基础类*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Tree/BaseTree.js"></script>
+    @*加载表格分页工具栏拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Define/ToolBar/Pagingtoolbar.js"></script>
+    @*加载MD5加密类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/md5-min.js"></script>
+    @*加载RSA长整型类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/BigInt.js"></script>
+    @*加载RSA加密类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/Barrett.js"></script>
+    @*加载RSA（公钥私钥）密码类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/RSA.js"></script>
+    @*加载方法Action创建类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/Base.js"></script>
+    @*加载基本Ajax调用拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/WsCall_base.js"></script>
+    @*加载表格快速查找拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/SearchField.js"></script>
+    @*加载完整日期输入拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/DateTimeField.js"></script>
+    @*加载表格选择列类型拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/checkcol.js"></script>
+    @*加载表格项目预览拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/GridPreviewPlugin.js"></script>
+    @*加载密码输入框拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/MyPasswordfield.js"></script>
+    @*加载状态保存拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Global/MyStateProvider.js"></script>
+    @*加载表格过滤拓展类*@
+    <script type="text/javascript" src="~/Content/javascript/Define/exUnit/exUnit.js"></script>
+    @RenderSection("ScriptTopContent", required: false)
+
+</head>
+<body>
+    @RenderBody()
+
+    @RenderSection("BottomContent", required: false)
+    @RenderSection("ScriptBottomContent", required: false)
+</body>
+</html>
+

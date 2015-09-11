@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap  xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-2.0" enableLocalization="true">
+  <mvcSiteMapNode title="11222321" controller="Home" action="Home" changeFrequency="Always" updatePriority="Normal">
+    <!--<mvcSiteMapNode controller="Products" action="Index" title="产品详细"/>-->
+    <mvcSiteMapNode title="分类" action="Index" dynamicNodeProvider="USO.Store.ProductDetailsDynamicNodeProvider, USO.Store">
+      
+    </mvcSiteMapNode>
+  </mvcSiteMapNode>
+</mvcSiteMap>

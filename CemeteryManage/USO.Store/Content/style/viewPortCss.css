@@ -1,0 +1,163 @@
+﻿.viewportMainWestTitle
+{
+    background-image: url(../images/tree/home.png) !important;
+}
+
+.delinfax
+{
+    background-image: url(../images/fax/delete.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.add
+{
+    background-image: url(../images/icons/fam/add.gif) !important;
+}
+
+.edit
+{
+    background-image: url(../images/toolbar/page_edit.png) !important;
+}
+
+.delete
+{
+    background-image: url(../images/icons/fam/delete.gif) !important;
+}
+
+.refresh
+{
+    background-image: url(../images/pub/refresh.png) !important;
+}
+
+.sort
+{
+    background-image: url(../images/fax/pageSend.png) !important;
+}
+
+.addUser
+{
+    background-image: url(../images/toolbar/user_add.png) !important;
+}
+
+.export
+{
+    background-image: url(../images/toolbar/export.png) !important;
+}
+
+.import
+{
+    background-image: url(../images/toolbar/import.png) !important;
+}
+
+.search
+{
+    background-image: url(../images/pub/search.png) !important;
+}
+
+.filedLable
+{
+    color: #04408C;
+    font-weight: bold;
+}
+
+.logout
+{
+    background-image: url(../images/toolbar/logoff.png) !important;
+}
+
+.hospital-target
+{
+    cursor: default;
+}
+
+    .hospital-target .hospital-target-hover
+    {
+        border: 1px solid red;
+    }
+
+
+.remarkDisplayFieldStyle
+{
+    white-space: normal;
+    word-break: break-all;
+}
+
+.buryPeople
+{
+    background-image: url(../images/fax/flag/flag_red.png) !important;
+}
+
+.unburyPeople
+{
+    background-image: url(../images/fax/flag/flag_green.png) !important;
+}
+
+.treepanel-bigFontSize
+{
+    height: 24px;
+    font-size: 16px !important;
+}
+
+    .treepanel-bigFontSize div
+    {
+        height: 24px;
+        font-size: 16px !important;
+    }
+
+.clearFloat
+{
+    clear: both;
+    float: none;
+}
+
+.leftFloat
+{
+    float: left;
+}
+
+.big-fieldtext
+{
+    font-size: 12px;
+}
+
+    .big-fieldtext .x-btn-inner
+    {
+        font-size: 12px;
+    }
+
+    .big-fieldtext .x-form-item-label
+    {
+        font-size: 12px;
+    }
+
+
+.lookTombstoneJobLog
+{
+    background-image: url(../images/toolbar/personal.png) !important;
+}
+
+
+.logInfoTable
+{
+    border: none;
+    width: 100%;
+}
+
+    .logInfoTable th
+    {
+        background-color: #F5F5F5;
+        border-bottom: 1px solid #dddada;
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        text-align: center;
+    }
+
+    .logInfoTable td
+    {
+        border-bottom: 1px solid #dddada;
+        border-right: none;
+        height: 24px;
+        padding-left: 4px;
+        text-align: center;
+    }

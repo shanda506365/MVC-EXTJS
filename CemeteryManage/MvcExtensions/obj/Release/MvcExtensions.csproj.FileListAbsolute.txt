@@ -1,0 +1,8 @@
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions\bin\Release\MvcExtensions.dll
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions\obj\Release\MvcExtensions.ExceptionMessages.resources
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions\obj\Release\MvcExtensions.csproj.GenerateResource.Cache
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions\obj\Release\MvcExtensions.dll
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions\bin\Release\MvcExtensions.dll
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions\obj\Release\MvcExtensions.ExceptionMessages.resources
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions\obj\Release\MvcExtensions.csproj.GenerateResource.Cache
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions\obj\Release\MvcExtensions.dll

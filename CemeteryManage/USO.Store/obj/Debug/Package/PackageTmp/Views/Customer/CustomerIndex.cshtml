@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "CustomerIndex";
+    Layout = "~/Views/Shared/_Stage.cshtml";
+}
+
+@model USO.Store.ViewModels.CustomerViewModel
+
+@section StyleContent{
+    
+}
+
+@section ScriptTopContent{
+    
+     @*加载下拉列表数据*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/ComboStore.js"></script>
+
+    @*加载客户表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/CustomerGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/CustomerGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/CustomerGridAc/CustomerGridAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/CustomerGrid.js"></script>
+     @*加载墓碑表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/TombstoneGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/TombstoneGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/TombstoneGridAc/TombstoneAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/TombstoneGrid.js"></script>
+    @*加载主目录树*@
+      <script type="text/javascript" src="~/Content/javascript/Define/Model/MainItemListTreeModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/MainItemListTreeStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Tree/MainItemListTree.js"></script>
+    
+    @*加载报表统计树*@
+      <script type="text/javascript" src="~/Content/javascript/Define/Model/ExReportListTreeModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/ExReportListTreeStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Tree/ExReportListTree.js"></script>
+     @*加载基础数据维护树*@
+      <script type="text/javascript" src="~/Content/javascript/Define/Model/BaseEnumListTreeModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/BaseEnumListTreeStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Tree/BaseEnumListTree.js"></script>
+  
+    
+    
+    @*加载通用窗口*@
+    <script type="text/javascript" src="~/Content/javascript/Define/UniversalWindow/SelectCustomerWin.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/UniversalWindow/SelectTombstoneWin.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/UniversalWindow/ImportDataWin.js"></script>
+    
+    
+
+    @*加载页面脚本*@
+    <script type="text/javascript" src="~/Content/javascript/Customer/CustomerJS.js"></script>
+}

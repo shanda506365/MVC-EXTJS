@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/WF51BS/!svn/ver/2448/branches/webserver/WebRoot/resources/images/workFlow/statues
+END
+wfwait.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/WF51BS/!svn/ver/2425/branches/webserver/WebRoot/resources/images/workFlow/statues/wfwait.png
+END
+wfok.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/WF51BS/!svn/ver/2425/branches/webserver/WebRoot/resources/images/workFlow/statues/wfok.png
+END
+wfactive.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/WF51BS/!svn/ver/2425/branches/webserver/WebRoot/resources/images/workFlow/statues/wfactive.png
+END
+wfidle.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/WF51BS/!svn/ver/2425/branches/webserver/WebRoot/resources/images/workFlow/statues/wfidle.png
+END
+wfrefused.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/WF51BS/!svn/ver/2425/branches/webserver/WebRoot/resources/images/workFlow/statues/wfrefused.png
+END

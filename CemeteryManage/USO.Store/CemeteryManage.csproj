@@ -1,0 +1,1496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D56D1C3-EA97-4102-8EED-5E74560CA934}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USO.Store</RootNamespace>
+    <AssemblyName>USO.Store</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DesktopBuildPackageLocation>..\..\..\Publish\USO.Web.zip</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\OpenDbm.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;d:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;d:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\OpenDbm.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>none</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;d:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;d:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AspNetMvc4\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider">
+      <HintPath>..\packages\MvcSiteMapProvider.3.3.6.0\lib\net40\MvcSiteMapProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AspNetMvc4\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AspNetMvc4\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AspNetMvc4\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AspNetMvc4\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AspNetMvc4\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\AspNetMvc4\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.Mvc, Version=2013.1.219.340, Culture=neutral, PublicKeyToken=29ac1a93ec063d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\TelerikMvcExtensions.2013.1.219\lib\net40\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="UPOnlineMPIUtilCSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\UPOnlineMPIUtilCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UPOPSDK">
+      <HintPath>..\libs\UPOPSDK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BaseEnumListTreeController.cs" />
+    <Compile Include="Controllers\CemeteryAreaController.cs" />
+    <Compile Include="Controllers\ComboStoreController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\ExReportListTreeController.cs" />
+    <Compile Include="Controllers\JobManageController.cs" />
+    <Compile Include="Controllers\MainItemListTreeController.cs" />
+    <Compile Include="Controllers\OtherController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\SysLogController.cs" />
+    <Compile Include="Controllers\TombstoneController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Routes\BaseEnumListTreeRoute.cs" />
+    <Compile Include="Routes\CemeteryAreaRoute.cs" />
+    <Compile Include="Routes\ComboStoreRoute.cs" />
+    <Compile Include="Routes\CustomerRoute.cs" />
+    <Compile Include="Routes\ExReportListTreeRoute.cs" />
+    <Compile Include="Routes\JobManageRoute.cs" />
+    <Compile Include="Routes\MainItemListTreeRoute.cs" />
+    <Compile Include="Routes\OtherRoute.cs" />
+    <Compile Include="Routes\RoleRoute.cs" />
+    <Compile Include="Routes\SysLogRoute.cs" />
+    <Compile Include="Routes\TombstoneRoute.cs" />
+    <Compile Include="Routes\UserRoute.cs" />
+    <Compile Include="Security\BigInteger.cs" />
+    <Compile Include="Security\EncryptString.cs" />
+    <Compile Include="Security\EnDecryptHelper.cs" />
+    <Compile Include="Security\GlobalEnum.cs" />
+    <Compile Include="Security\GlobalMethod.cs" />
+    <Compile Include="ViewModels\GridStoreBaseModel.cs" />
+    <Content Include="Content\images\button\btnFirst.png" />
+    <Content Include="Content\images\button\btnLast.png" />
+    <Content Include="Content\images\button\btnNext.png" />
+    <Content Include="Content\images\button\btnPre.png" />
+    <Content Include="Content\images\button\clear-trigger.gif" />
+    <Content Include="Content\images\button\docment.png" />
+    <Content Include="Content\images\button\drop-add.png" />
+    <Content Include="Content\images\button\first.png" />
+    <Content Include="Content\images\button\first_disabled.png" />
+    <Content Include="Content\images\button\last.png" />
+    <Content Include="Content\images\button\last_disabled.png" />
+    <Content Include="Content\images\button\next.png" />
+    <Content Include="Content\images\button\next_disabled.png" />
+    <Content Include="Content\images\button\prev.png" />
+    <Content Include="Content\images\button\prev_disabled.png" />
+    <Content Include="Content\images\button\search-trigger.gif" />
+    <Content Include="Content\images\button\StChart.png" />
+    <Content Include="Content\images\button\XPButtonUploadText_61x22.png" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\fax\clearAll.png" />
+    <Content Include="Content\images\fax\delete.png" />
+    <Content Include="Content\images\fax\download.png" />
+    <Content Include="Content\images\fax\faxviewer\flip.png" />
+    <Content Include="Content\images\fax\faxviewer\pageView.png" />
+    <Content Include="Content\images\fax\faxviewer\rotateLeft.png" />
+    <Content Include="Content\images\fax\faxviewer\rotateRight.png" />
+    <Content Include="Content\images\fax\faxviewer\thumbView.png" />
+    <Content Include="Content\images\fax\flagfilter.png" />
+    <Content Include="Content\images\fax\flag\flag_blue.png" />
+    <Content Include="Content\images\fax\flag\flag_green.png" />
+    <Content Include="Content\images\fax\flag\flag_orange.png" />
+    <Content Include="Content\images\fax\flag\flag_pink.png" />
+    <Content Include="Content\images\fax\flag\flag_purple.png" />
+    <Content Include="Content\images\fax\flag\flag_red.png" />
+    <Content Include="Content\images\fax\flag\flag_yellow.png" />
+    <Content Include="Content\images\fax\inFax.png" />
+    <Content Include="Content\images\fax\inForward.png" />
+    <Content Include="Content\images\fax\pageSend.png" />
+    <Content Include="Content\images\fax\restore.png" />
+    <Content Include="Content\images\fax\status\outstatus.0.png" />
+    <Content Include="Content\images\fax\status\outstatus.1.png" />
+    <Content Include="Content\images\fax\status\outstatus.2.png" />
+    <Content Include="Content\images\fax\status\outstatus.3.png" />
+    <Content Include="Content\images\fax\status\outstatus.4.png" />
+    <Content Include="Content\images\fax\status\outstatus.5.png" />
+    <Content Include="Content\images\fax\status\outstatus.6.png" />
+    <Content Include="Content\images\fax\status\outstatus.7.png" />
+    <Content Include="Content\images\fax\status\outstatus.8.png" />
+    <Content Include="Content\images\fax\status\outstatus.9.png" />
+    <Content Include="Content\images\fileimg\7z.png" />
+    <Content Include="Content\images\fileimg\bmp.png" />
+    <Content Include="Content\images\fileimg\bz2.png" />
+    <Content Include="Content\images\fileimg\csv.png" />
+    <Content Include="Content\images\fileimg\def.png" />
+    <Content Include="Content\images\fileimg\dll.png" />
+    <Content Include="Content\images\fileimg\doc.png" />
+    <Content Include="Content\images\fileimg\docx.png" />
+    <Content Include="Content\images\fileimg\gif.png" />
+    <Content Include="Content\images\fileimg\gz.png" />
+    <Content Include="Content\images\fileimg\inf.png" />
+    <Content Include="Content\images\fileimg\ini.png" />
+    <Content Include="Content\images\fileimg\jpg.png" />
+    <Content Include="Content\images\fileimg\log.png" />
+    <Content Include="Content\images\fileimg\mdb.png" />
+    <Content Include="Content\images\fileimg\mdbx.png" />
+    <Content Include="Content\images\fileimg\mp3.png" />
+    <Content Include="Content\images\fileimg\msi.png" />
+    <Content Include="Content\images\fileimg\pdf.png" />
+    <Content Include="Content\images\fileimg\png.png" />
+    <Content Include="Content\images\fileimg\ppt.png" />
+    <Content Include="Content\images\fileimg\pptx.png" />
+    <Content Include="Content\images\fileimg\rar.png" />
+    <Content Include="Content\images\fileimg\tar.png" />
+    <Content Include="Content\images\fileimg\tgz.png" />
+    <Content Include="Content\images\fileimg\tif.png" />
+    <Content Include="Content\images\fileimg\txt.png" />
+    <Content Include="Content\images\fileimg\xls.png" />
+    <Content Include="Content\images\fileimg\xlsx.png" />
+    <Content Include="Content\images\fileimg\xps.png" />
+    <Content Include="Content\images\fileimg\zip.png" />
+    <Content Include="Content\images\grid\book_add.png" />
+    <Content Include="Content\images\grid\book_delete.png" />
+    <Content Include="Content\images\grid\book_edit.png" />
+    <Content Include="Content\images\grid\cancelFax.png" />
+    <Content Include="Content\images\grid\checked.png" />
+    <Content Include="Content\images\grid\col-move-bottom.png" />
+    <Content Include="Content\images\grid\col-move-top.png" />
+    <Content Include="Content\images\grid\inFax.png" />
+    <Content Include="Content\images\grid\okFax.png" />
+    <Content Include="Content\images\grid\pbrecord.png" />
+    <Content Include="Content\images\grid\unchecked.png" />
+    <Content Include="Content\images\grid\uniondoc.png" />
+    <Content Include="Content\images\icons\fam\accept.gif" />
+    <Content Include="Content\images\icons\fam\accept.png" />
+    <Content Include="Content\images\icons\fam\add.gif" />
+    <Content Include="Content\images\icons\fam\add.png" />
+    <Content Include="Content\images\icons\fam\application_go.png" />
+    <Content Include="Content\images\icons\fam\application_view_list.png" />
+    <Content Include="Content\images\icons\fam\book.png" />
+    <Content Include="Content\images\icons\fam\cog.gif" />
+    <Content Include="Content\images\icons\fam\cog.png" />
+    <Content Include="Content\images\icons\fam\cog_edit.png" />
+    <Content Include="Content\images\icons\fam\connect.gif" />
+    <Content Include="Content\images\icons\fam\connect.png" />
+    <Content Include="Content\images\icons\fam\control_rewind.png" />
+    <Content Include="Content\images\icons\fam\cross.gif" />
+    <Content Include="Content\images\icons\fam\delete.gif" />
+    <Content Include="Content\images\icons\fam\error.gif" />
+    <Content Include="Content\images\icons\fam\error.png" />
+    <Content Include="Content\images\icons\fam\feed_add.png" />
+    <Content Include="Content\images\icons\fam\feed_delete.png" />
+    <Content Include="Content\images\icons\fam\feed_error.png" />
+    <Content Include="Content\images\icons\fam\folder_go.gif" />
+    <Content Include="Content\images\icons\fam\folder_go.png" />
+    <Content Include="Content\images\icons\fam\folder_wrench.png" />
+    <Content Include="Content\images\icons\fam\grid.png" />
+    <Content Include="Content\images\icons\fam\image_add.png" />
+    <Content Include="Content\images\icons\fam\information.png" />
+    <Content Include="Content\images\icons\fam\plugin.gif" />
+    <Content Include="Content\images\icons\fam\plugin_add.gif" />
+    <Content Include="Content\images\icons\fam\rss_go.png" />
+    <Content Include="Content\images\icons\fam\SILK.txt" />
+    <Content Include="Content\images\icons\fam\table_refresh.png" />
+    <Content Include="Content\images\icons\fam\user.gif" />
+    <Content Include="Content\images\icons\fam\user.png" />
+    <Content Include="Content\images\icons\fam\user_add.gif" />
+    <Content Include="Content\images\icons\fam\user_add.png" />
+    <Content Include="Content\images\icons\fam\user_comment.png" />
+    <Content Include="Content\images\icons\fam\user_delete.gif" />
+    <Content Include="Content\images\icons\fam\user_delete.png" />
+    <Content Include="Content\images\icons\fam\user_edit.png" />
+    <Content Include="Content\images\icons\fam\user_female.gif" />
+    <Content Include="Content\images\icons\fam\user_female.png" />
+    <Content Include="Content\images\icons\fam\user_gray.png" />
+    <Content Include="Content\images\icons\fam\user_green.gif" />
+    <Content Include="Content\images\icons\fam\user_green.png" />
+    <Content Include="Content\images\icons\fam\user_orange.png" />
+    <Content Include="Content\images\icons\fam\user_red.png" />
+    <Content Include="Content\images\icons\fam\user_suit.gif" />
+    <Content Include="Content\images\icons\fam\user_suit.png" />
+    <Content Include="Content\images\loginbk.png" />
+    <Content Include="Content\images\pub\addRec.png" />
+    <Content Include="Content\images\pub\attach.png" />
+    <Content Include="Content\images\pub\backUp.png" />
+    <Content Include="Content\images\pub\docDrag.png" />
+    <Content Include="Content\images\pub\drop-yes.png" />
+    <Content Include="Content\images\pub\exclamation.png" />
+    <Content Include="Content\images\pub\refresh.png" />
+    <Content Include="Content\images\pub\search.png" />
+    <Content Include="Content\images\pub\senfaxwin.png" />
+    <Content Include="Content\images\pub\sucMsg.png" />
+    <Content Include="Content\images\pub\userStatus.png" />
+    <Content Include="Content\images\sms\status\outstatus.0.png" />
+    <Content Include="Content\images\sms\status\outstatus.1.png" />
+    <Content Include="Content\images\sms\status\outstatus.2.png" />
+    <Content Include="Content\images\sms\status\outstatus.3.png" />
+    <Content Include="Content\images\Tombstone.png" />
+    <Content Include="Content\images\tombstone\gif\alone-empty.gif" />
+    <Content Include="Content\images\tombstone\gif\alone-order.gif" />
+    <Content Include="Content\images\tombstone\gif\alone-sale.gif" />
+    <Content Include="Content\images\tombstone\gif\alone-zbury.gif" />
+    <Content Include="Content\images\tombstone\gif\double-empty.gif" />
+    <Content Include="Content\images\tombstone\gif\double-order.gif" />
+    <Content Include="Content\images\tombstone\gif\double-sale.gif" />
+    <Content Include="Content\images\tombstone\gif\double-zbury1.gif" />
+    <Content Include="Content\images\tombstone\gif\double-zbury2.gif" />
+    <Content Include="Content\images\tombstone\gif\double-zbury3.gif" />
+    <Content Include="Content\images\tombstone\gif\specil-empty.gif" />
+    <Content Include="Content\images\tombstone\gif\specil-order.gif" />
+    <Content Include="Content\images\tombstone\gif\specil-sale.gif" />
+    <Content Include="Content\images\tombstone\gif\specil-zbury.gif" />
+    <Content Include="Content\images\tombstone\Tombstone.01.png" />
+    <Content Include="Content\images\tombstone\Tombstone.02.png" />
+    <Content Include="Content\images\tombstone\Tombstone.03.png" />
+    <Content Include="Content\images\tombstone\Tombstone.04.png" />
+    <Content Include="Content\images\tombstone\Tombstone.png" />
+    <Content Include="Content\images\toolbar\BkToDoc.png" />
+    <Content Include="Content\images\toolbar\block.png" />
+    <Content Include="Content\images\toolbar\cancelFax.png" />
+    <Content Include="Content\images\toolbar\clipboard.png" />
+    <Content Include="Content\images\toolbar\comment.png" />
+    <Content Include="Content\images\toolbar\config.png" />
+    <Content Include="Content\images\toolbar\cutDic.png" />
+    <Content Include="Content\images\toolbar\dicBack.png" />
+    <Content Include="Content\images\toolbar\dicCol.png" />
+    <Content Include="Content\images\toolbar\editrcp.png" />
+    <Content Include="Content\images\toolbar\export.png" />
+    <Content Include="Content\images\toolbar\help_16.png" />
+    <Content Include="Content\images\toolbar\imgfolder.png" />
+    <Content Include="Content\images\toolbar\import.png" />
+    <Content Include="Content\images\toolbar\logoff.png" />
+    <Content Include="Content\images\toolbar\MLine.png" />
+    <Content Include="Content\images\toolbar\modfResend.png" />
+    <Content Include="Content\images\toolbar\NewDoc.png" />
+    <Content Include="Content\images\toolbar\page_edit.png" />
+    <Content Include="Content\images\toolbar\personal.png" />
+    <Content Include="Content\images\toolbar\print.png" />
+    <Content Include="Content\images\toolbar\priority.png" />
+    <Content Include="Content\images\toolbar\reply.png" />
+    <Content Include="Content\images\toolbar\resend.png" />
+    <Content Include="Content\images\toolbar\rewardEmail.png" />
+    <Content Include="Content\images\toolbar\save.png" />
+    <Content Include="Content\images\toolbar\Select.png" />
+    <Content Include="Content\images\toolbar\send.png" />
+    <Content Include="Content\images\toolbar\SendFax.png" />
+    <Content Include="Content\images\toolbar\SendSMS.png" />
+    <Content Include="Content\images\toolbar\SLine.png" />
+    <Content Include="Content\images\toolbar\stamp.png" />
+    <Content Include="Content\images\toolbar\tbQueue.png" />
+    <Content Include="Content\images\toolbar\templete.png" />
+    <Content Include="Content\images\toolbar\timefilter.png" />
+    <Content Include="Content\images\toolbar\user_add.png" />
+    <Content Include="Content\images\toolbar\user_delete.png" />
+    <Content Include="Content\images\toolbar\warning.png" />
+    <Content Include="Content\images\toolbar\writetxt.png" />
+    <Content Include="Content\images\tree\address_16.png" />
+    <Content Include="Content\images\tree\backUp.png" />
+    <Content Include="Content\images\tree\document.png" />
+    <Content Include="Content\images\tree\download.png" />
+    <Content Include="Content\images\tree\editrcp.png" />
+    <Content Include="Content\images\tree\favourites16.png" />
+    <Content Include="Content\images\tree\Fax.png" />
+    <Content Include="Content\images\tree\faxTitle.png" />
+    <Content Include="Content\images\tree\folder.png" />
+    <Content Include="Content\images\tree\folderopen.png" />
+    <Content Include="Content\images\tree\folder_add.png" />
+    <Content Include="Content\images\tree\folder_delete.png" />
+    <Content Include="Content\images\tree\home.png" />
+    <Content Include="Content\images\tree\inbox.png" />
+    <Content Include="Content\images\tree\linkfolder.png" />
+    <Content Include="Content\images\tree\netFax.png" />
+    <Content Include="Content\images\tree\outbox.png" />
+    <Content Include="Content\images\tree\personFax.png" />
+    <Content Include="Content\images\tree\saveDraft.png" />
+    <Content Include="Content\images\tree\sent.png" />
+    <Content Include="Content\images\tree\smsTree.png" />
+    <Content Include="Content\images\tree\trash.png" />
+    <Content Include="Content\images\tree\workFlow.png" />
+    <Content Include="Content\images\workFlow\arrow.png" />
+    <Content Include="Content\images\workFlow\arrowS.png" />
+    <Content Include="Content\images\workFlow\comment.png" />
+    <Content Include="Content\images\workFlow\dealTask.png" />
+    <Content Include="Content\images\workFlow\deputeTask.png" />
+    <Content Include="Content\images\workFlow\doAppr.png" />
+    <Content Include="Content\images\workFlow\doApprs.png" />
+    <Content Include="Content\images\workFlow\flag\wFlag0.png" />
+    <Content Include="Content\images\workFlow\flag\wFlag1.png" />
+    <Content Include="Content\images\workFlow\flag\wFlag2.png" />
+    <Content Include="Content\images\workFlow\lchTasks.png" />
+    <Content Include="Content\images\workFlow\starTask.png" />
+    <Content Include="Content\images\workFlow\statues\wfactive.png" />
+    <Content Include="Content\images\workFlow\statues\wfidle.png" />
+    <Content Include="Content\images\workFlow\statues\wfok.png" />
+    <Content Include="Content\images\workFlow\statues\wfrefused.png" />
+    <Content Include="Content\images\workFlow\statues\wfwait.png" />
+    <Content Include="Content\images\workFlow\submitTask.png" />
+    <Content Include="Content\images\workFlow\task-fail.png" />
+    <Content Include="Content\images\workFlow\task-loading.png" />
+    <Content Include="Content\images\workFlow\task-suc.png" />
+    <Content Include="Content\images\workFlow\task.png" />
+    <Content Include="Content\images\workFlow\workflowTask.png" />
+    <Content Include="Content\javascript\config\GlobalConfig.js" />
+    <Content Include="Content\javascript\config\GlobalFun.js" />
+    <Content Include="Content\javascript\config\locale.js" />
+    <Content Include="Content\javascript\Customer\CustomerJS.js" />
+    <Content Include="Content\javascript\Define\Action\BuryManGridAc\BuryManGridAction.js" />
+    <Content Include="Content\javascript\Define\Action\CemeteryAreaGridAc\CemeteryAreaGridAction.js" />
+    <Content Include="Content\javascript\Define\Action\CustomerGridAc\CustomerGridAction.js" />
+    <Content Include="Content\javascript\Define\Action\PermissionsGridAc\PermissionsGridAction.js" />
+    <Content Include="Content\javascript\Define\Action\RoleGridAc\RoleGridAction.js" />
+    <Content Include="Content\javascript\Define\Action\SysLogGridAc\SysLogAction.js" />
+    <Content Include="Content\javascript\Define\Action\TombstoneGridAc\TombstoneAction.js" />
+    <Content Include="Content\javascript\Define\Action\TombstoneSearchGridAc\TombstoneSearchGridAction.js" />
+    <Content Include="Content\javascript\Define\Action\UserGridAc\UserAction.js" />
+    <Content Include="Content\javascript\Define\DefaultGrid\AreaSetDfGrid.js" />
+    <Content Include="Content\javascript\Define\DefaultGrid\JobManageDfGrid.js" />
+    <Content Include="Content\javascript\Define\exUnit\exUnit.js" />
+    <Content Include="Content\javascript\Define\Grid\BaseGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\BuryManGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\CemeteryAreaGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\CustomerGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\RenewManageGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\RoleGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\SysLogGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\TombstoneGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\TombstoneSearchGrid.js" />
+    <Content Include="Content\javascript\Define\Grid\UserGrid.js" />
+    <Content Include="Content\javascript\Define\Model\BaseEnumListTreeModel.js" />
+    <Content Include="Content\javascript\Define\Model\BuryManGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\CemeteryAreaGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\CustomerGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\ExReportListTreeModel.js" />
+    <Content Include="Content\javascript\Define\Model\MainItemListTreeModel.js" />
+    <Content Include="Content\javascript\Define\Model\RenewManageGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\RoleGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\SysLogGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\TombstoneGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\TombstoneSearchGridModel.js" />
+    <Content Include="Content\javascript\Define\Model\UserGridModel.js" />
+    <Content Include="Content\javascript\Define\Store\BaseEnumListTreeStore.js" />
+    <Content Include="Content\javascript\Define\Store\BuryManGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\CemeteryAreaGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\ComboStore.js" />
+    <Content Include="Content\javascript\Define\Store\CustomerGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\ExReportListTreeStore.js" />
+    <Content Include="Content\javascript\Define\Store\MainItemListTreeStore.js" />
+    <Content Include="Content\javascript\Define\Store\RenewManageGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\RoleGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\SysLogGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\TombstoneGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\TombstoneSearchGridStore.js" />
+    <Content Include="Content\javascript\Define\Store\UserGridStore.js" />
+    <Content Include="Content\javascript\Define\ToolBar\Pagingtoolbar.js" />
+    <Content Include="Content\javascript\Define\Tree\BaseEnumListTree.js" />
+    <Content Include="Content\javascript\Define\Tree\BaseTree.js" />
+    <Content Include="Content\javascript\Define\Tree\ExReportListTree.js" />
+    <Content Include="Content\javascript\Define\Tree\MainItemListTree.js" />
+    <Content Include="Content\javascript\Define\UniversalWindow\ImportDataWin.js" />
+    <Content Include="Content\javascript\Define\UniversalWindow\SelectCemeteryAreaWin.js" />
+    <Content Include="Content\javascript\Define\UniversalWindow\SelectCustomerWin.js" />
+    <Content Include="Content\javascript\Define\UniversalWindow\SelectTombstoneWin.js" />
+    <Content Include="Content\javascript\ext4\ext-all-debug.js" />
+    <Content Include="Content\javascript\ext4\ext-all.js" />
+    <Content Include="Content\javascript\ext4\locale\ext-lang-en.js" />
+    <Content Include="Content\javascript\ext4\locale\ext-lang-zh_CN.js" />
+    <Content Include="Content\javascript\ext4\resources\css\ext-all-slate.css" />
+    <Content Include="Content\javascript\ext4\resources\css\ext-all.css" />
+    <Content Include="Content\javascript\ext4\resources\css\ext-neptune.css" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\boundlist\trigger-arrow.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\corners-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\l-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\l.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\r-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\r.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\tb-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\box\tb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn-group\btn-group-default-framed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn-group\btn-group-default-framed-notitle-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn-group\btn-group-default-framed-notitle-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn-group\btn-group-default-framed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-large-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-medium-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-small-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-large-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-medium-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\btn\btn-default-toolbar-small-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\arrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\group-cs.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\group-lr.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\group-tb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\s-arrow-b-noline.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\s-arrow-b.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\s-arrow-bo.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\s-arrow-light.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\s-arrow-noline.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\s-arrow-o.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\button\s-arrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\datepicker\datepicker-footer-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\datepicker\datepicker-footer-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\datepicker\datepicker-header-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\datepicker\datepicker-header-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\dd\drop-add.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\dd\drop-no.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\dd\drop-yes.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\editor\tb-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form-invalid-tip\form-invalid-tip-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form-invalid-tip\form-invalid-tip-default-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form-invalid-tip\form-invalid-tip-default-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form-invalid-tip\form-invalid-tip-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\checkbox.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\clear-trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\date-trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\error-tip-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\exclamation.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\radio.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\search-trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\spinner-small.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\spinner.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\text-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\trigger-square.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\trigger-tpl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\form\trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\arrow-left-white.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\arrow-right-white.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\cell-special-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\cell-special-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\cell-special-selected-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\cell-special-selected-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\checked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\col-move-bottom.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\col-move-top.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\column-header-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\column-header-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\column-header-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\column-header-over-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\columns.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\dd-insert-arrow-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\dd-insert-arrow-left.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\dd-insert-arrow-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\dd-insert-arrow-right.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\dirty.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\done.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\drop-no.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\drop-yes.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\footer-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid-blue-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid-blue-split.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid-hrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid-loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid-split.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid-vista-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid3-hrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\grid3-rowheader.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\group-by.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\group-collapse.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\group-expand-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\group-expand.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\hd-pop.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\hmenu-asc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\hmenu-desc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\hmenu-lock.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\hmenu-lock.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\hmenu-unlock.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\hmenu-unlock.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\invalid_line.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\mso-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\nowait.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-first-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-first.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-last-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-last.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-next-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-next.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-prev-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\page-prev.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\pick-button.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\property-cell-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\property-cell-selected-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\refresh-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\refresh.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\row-check-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\row-expand-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\row-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\row-sel.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\sort-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\sort_asc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\sort_desc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\unchecked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\grid\wait.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\layout\mini-bottom.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\layout\mini-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\layout\mini-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\layout\mini-top.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\checked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\group-checked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\item-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\menu-item-active-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\menu-item-active-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\menu-item-active-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\menu-parent.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\menu.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\menu\unchecked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-left-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-left-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-left-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-right-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-right-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-right-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-collapsed-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-left-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-left-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-left-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-right-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-right-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-right-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-framed-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-left-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-right-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel-header\panel-header-default-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel\panel-default-framed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\panel\panel-default-framed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\progress\progress-default-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\blue-loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\calendar.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\glass-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\hd-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\icon-error.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\icon-info.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\icon-question.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\icon-warning.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\large-loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\left-btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\loading-balls.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\right-btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\shadow-c.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\shadow-lr.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\shadow.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\shared\warning.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\e-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\e-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\ne-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\nw-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\s-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\s-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\se-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\se-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\square.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\sizer\sw-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-thumb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-thumb.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-v-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-v-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-v-thumb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\slider\slider-v-thumb.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab-bar\scroll-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab-bar\scroll-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab-bar\tab-bar-default-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-active-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-active-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-active-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-close.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-active-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-active-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-active-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tab\tab-default-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tip\tip-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tip\tip-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\toolbar\more.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\toolbar\scroll-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\toolbar\scroll-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\toolbar\toolbar-default-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tools\tool-sprite-tpl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tools\tool-sprites.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tools\tools-sprites-trans.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\arrows.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-above.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-add.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-append.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-below.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-between.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-no.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-under.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\drop-yes.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-end-minus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-end-plus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-end.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-line.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-minus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow-plus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\elbow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\folder-open.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\folder.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\leaf.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\tree\s.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\util\splitter\mini-bottom.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\util\splitter\mini-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\util\splitter\mini-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\util\splitter\mini-top.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-left-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-left-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-right-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-right-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-collapsed-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-left-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-left-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-right-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-right-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window-header\window-header-default-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window\window-default-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\default\window\window-default-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\arrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\arrow.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\group-cs.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\group-lr.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\group-tb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow-b-noline.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow-b.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow-bo.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow-light.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow-noline.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow-o.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow-p.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\button\s-arrow.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\checkbox.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\grid\header-border.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\grid\sort.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\icons.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\invalid.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\radio.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tools-small.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tools.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tree\elbows.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tree\icons-blue.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tree\icons-gray.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tree\icons-navy.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tree\icons-orange.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tree\icons-white.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\tree\icons.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\triggerfield.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\valid.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\neptune\WYSIWYG.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\boundlist\trigger-arrow.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\corners-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\l-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\l.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\r-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\r.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\tb-blue.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\tb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn-group\btn-group-default-framed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn-group\btn-group-default-framed-notitle-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn-group\btn-group-default-framed-notitle-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn-group\btn-group-default-framed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-large-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-medium-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-small-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-large-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-medium-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-focus-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-focus-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-focus-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-pressed-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-pressed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-pressed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn\btn-default-toolbar-small-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\arrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\btn-arrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\btn-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\group-cs.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\group-lr.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\group-tb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\s-arrow-b-noline.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\s-arrow-b.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\s-arrow-bo.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\s-arrow-light.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\s-arrow-noline.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\s-arrow-o.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\s-arrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\datepicker\datepicker-footer-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\datepicker\datepicker-footer-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\datepicker\datepicker-header-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\datepicker\datepicker-header-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\dd\drop-add.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\dd\drop-no.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\dd\drop-yes.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\editor\tb-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form-invalid-tip\form-invalid-tip-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form-invalid-tip\form-invalid-tip-default-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form-invalid-tip\form-invalid-tip-default-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form-invalid-tip\form-invalid-tip-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\checkbox.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\clear-trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\date-trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\error-tip-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\exclamation.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\radio.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\search-trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\spinner-small.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\spinner.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\text-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\trigger-add.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\trigger-square.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\trigger-tpl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\trigger.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\arrow-left-white.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\arrow-right-white.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\cell-special-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\cell-special-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\cell-special-selected-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\cell-special-selected-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\checked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\col-move-bottom.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\col-move-top.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\column-header-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\column-header-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\column-header-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\column-header-over-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\columns.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\dd-insert-arrow-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\dd-insert-arrow-left.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\dd-insert-arrow-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\dd-insert-arrow-right.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\dirty.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\done.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\drop-no.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\drop-yes.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\footer-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid-blue-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid-blue-split.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid-hrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid-loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid-split.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid-vista-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid3-hd-btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid3-hrow-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid3-hrow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\grid3-rowheader.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\group-by.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\group-collapse.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\group-expand-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\group-expand.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\hd-pop.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\hmenu-asc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\hmenu-desc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\hmenu-lock.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\hmenu-lock.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\hmenu-unlock.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\hmenu-unlock.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\invalid_line.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\mso-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\nowait.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-first-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-first.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-last-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-last.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-next-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-next.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-prev-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\page-prev.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\pick-button.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\property-cell-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\property-cell-selected-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\refresh-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\refresh.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\row-check-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\row-expand-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\row-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\row-sel.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\sort-hd.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\sort_asc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\sort_desc.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\unchecked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\wait.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\layout\mini-bottom.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\layout\mini-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\layout\mini-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\layout\mini-top.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\checked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\group-checked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\item-over-disabled.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\item-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\menu-item-active-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\menu-item-active-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\menu-item-active-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\menu-parent.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\menu.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\unchecked.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-left-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-left-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-left-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-right-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-right-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-right-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-collapsed-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-left-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-left-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-left-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-right-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-right-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-right-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-framed-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-left-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-right-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\panel-header-default-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel\panel-default-framed-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel\panel-default-framed-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\progress\progress-default-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\blue-loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\calendar.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\glass-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\hd-sprite.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\icon-error.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\icon-info.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\icon-question.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\icon-warning.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\large-loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\left-btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\loading-balls.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\right-btn.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\shadow-c.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\shadow-lr.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\shadow.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\warning.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\e-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\e-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\ne-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\ne-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\nw-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\nw-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\s-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\s-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\se-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\se-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\square.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\sw-handle-dark.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\sw-handle.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-thumb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-thumb.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-v-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-v-bg.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-v-thumb.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\slider-v-thumb.png" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab-bar\scroll-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab-bar\scroll-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab-bar\tab-bar-default-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-active-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-active-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-active-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-close.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-active-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-active-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-active-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-disabled-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-disabled-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-disabled-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-over-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-over-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-over-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\tab-default-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tip\tip-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tip\tip-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\toolbar\more.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\toolbar\scroll-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\toolbar\scroll-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\toolbar\toolbar-default-bg.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tools\tool-sprite-tpl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tools\tool-sprites.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tools\tools-sprites-trans.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\arrows.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-above.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-add.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-append.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-below.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-between.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-no.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-over.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-under.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\drop-yes.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-end-minus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-end-minus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-end-plus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-end-plus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-end.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-line.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-minus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-minus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-plus-nl.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow-plus.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\elbow.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\folder-open.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\folder.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\leaf.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\loading.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\s.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\util\splitter\mini-bottom.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\util\splitter\mini-left.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\util\splitter\mini-right.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\util\splitter\mini-top.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-bottom-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-bottom-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-left-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-left-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-right-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-right-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-top-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\window-header-default-top-sides.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window\icon-error.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window\icon-info.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window\icon-question.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window\icon-warning.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window\window-default-corners.gif" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window\window-default-sides.gif" />
+    <Content Include="Content\javascript\fileDownload\images\gritter-light.png" />
+    <Content Include="Content\javascript\fileDownload\images\gritter-long.png" />
+    <Content Include="Content\javascript\fileDownload\images\gritter.png" />
+    <Content Include="Content\javascript\fileDownload\images\ie-spacer.gif" />
+    <Content Include="Content\javascript\fileDownload\images\pbar-ani.gif" />
+    <Content Include="Content\javascript\fileDownload\jquery.fileDownload.js" />
+    <Content Include="Content\javascript\fileDownload\jquery.fileDownload.shCoreDefault.css" />
+    <Content Include="Content\javascript\fileDownload\jquery.fileDownload.Site.css" />
+    <Content Include="Content\javascript\fileDownload\jquery.gritter.css" />
+    <Content Include="Content\javascript\fileDownload\Support\jquery.gritter.min.js" />
+    <Content Include="Content\javascript\fileDownload\Support\shBrushJScript.js" />
+    <Content Include="Content\javascript\fileDownload\Support\shBrushXml.js" />
+    <Content Include="Content\javascript\fileDownload\Support\shCore.js" />
+    <Content Include="Content\javascript\Global\Barrett.js" />
+    <Content Include="Content\javascript\Global\Base.js" />
+    <Content Include="Content\javascript\Global\BigInt.js" />
+    <Content Include="Content\javascript\Global\checkcol.js" />
+    <Content Include="Content\javascript\Global\DateTimeField.js" />
+    <Content Include="Content\javascript\Global\GridPreviewPlugin.js" />
+    <Content Include="Content\javascript\Global\md5-min.js" />
+    <Content Include="Content\javascript\Global\MyPasswordfield.js" />
+    <Content Include="Content\javascript\Global\MyStateProvider.js" />
+    <Content Include="Content\javascript\Global\RSA.js" />
+    <Content Include="Content\javascript\Global\SearchField.js" />
+    <Content Include="Content\javascript\Global\WsCall_base.js" />
+    <Content Include="Content\javascript\UserLogin.js" />
+    <Content Include="Content\style\viewPortCss.css" />
+    <Content Include="Content\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="PanGu.xml" />
+    <Content Include="PriceOrgMapConfig.xml" />
+    <Content Include="R3DistributionChangeConfig.xml" />
+    <Content Include="Mvc.sitemap" />
+    <Content Include="AppSettings.config" />
+    <Content Include="App_Data\payConf.config" />
+    <Content Include="Content\javascript\ext4\resources\css\ext-all-slate.css.bak" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\boundlist\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\box\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\btn-group\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\button\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\datepicker\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\dd\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\editor\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form-invalid-tip\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\form\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\grid\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\layout\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\menu\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel-header\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\panel\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\progress\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\shared\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\sizer\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\slider\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab-bar\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tab\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tip\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\toolbar\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tools\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\tree\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\util\splitter\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window-header\Thumbs.db" />
+    <Content Include="Content\javascript\ext4\resources\themes\images\slate\window\Thumbs.db" />
+    <None Include="MvcSiteMapSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Cemetery.pubxml" />
+    <None Include="Properties\PublishProfiles\Publish.pubxml" />
+    <None Include="Properties\PublishProfiles\PublishStore.pubxml" />
+    <Content Include="Views\Shared\_AcStage.cshtml" />
+    <Content Include="Views\Shared\_Stage.cshtml" />
+    <Content Include="uso.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Customer\CustomerIndex.cshtml" />
+    <Content Include="Views\User\UserLogin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\Logs\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="connectionString.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MvcExtensions.Unity\MvcExtensions.Unity.csproj">
+      <Project>{b7371722-2ecb-4a55-a598-908bf42af80d}</Project>
+      <Name>MvcExtensions.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvcExtensions\MvcExtensions.csproj">
+      <Project>{36d776aa-6b96-4d33-b7b5-7f4a5376dd37}</Project>
+      <Name>MvcExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USO.Core\USO.Core.csproj">
+      <Project>{00E617BB-63D8-4B6C-8C23-41D9F35C55AE}</Project>
+      <Name>USO.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USO.Domain\USO.Domain.csproj">
+      <Project>{C8D81E91-A01E-4A67-A1A7-FD785901516D}</Project>
+      <Name>USO.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USO.Dto\USO.Dto.csproj">
+      <Project>{3D844397-9066-4E61-A1B3-5D3FEE61CB2C}</Project>
+      <Name>USO.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USO.Infrastructure\USO.Infrastructure.csproj">
+      <Project>{997B79DB-93B2-49F7-98D1-428DBB38D16D}</Project>
+      <Name>USO.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USO.Mvc\USO.Mvc.csproj">
+      <Project>{3DBAFD96-9E18-4CDD-9656-8D1BF4C321B0}</Project>
+      <Name>USO.Mvc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48576</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4985/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+</Project>

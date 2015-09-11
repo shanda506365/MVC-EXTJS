@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "皇恩寺陵园系统";
+    Layout = "~/Views/Shared/_Stage.cshtml";
+}
+
+@section TitleContent{
+    皇恩寺陵园系统
+}
+@section StyleContent{
+    
+}
+
+@section ScriptTopContent{
+    
+     @*加载下拉列表数据*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/ComboStore.js"></script>
+     @*加载Df表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/DefaultGrid/AreaSetDfGrid.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/DefaultGrid/JobManageDfGrid.js"></script>
+    @*加载客户表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/CustomerGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/CustomerGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/CustomerGridAc/CustomerGridAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/CustomerGrid.js"></script>
+     @*加载墓碑表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/TombstoneGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/TombstoneGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/TombstoneGridAc/TombstoneAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/TombstoneGrid.js"></script>
+      @*加载业务查询墓碑表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/TombstoneSearchGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/TombstoneSearchGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/TombstoneSearchGridAc/TombstoneSearchGridAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/TombstoneSearchGrid.js"></script>
+    
+     @*加载用户表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/UserGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/UserGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/UserGridAc/UserAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/UserGrid.js"></script>
+    
+     @*加载日志表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/SysLogGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/SysLogGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/SysLogGridAc/SysLogAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/SysLogGrid.js"></script>
+    
+     @*加载角色表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/RoleGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/RoleGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/RoleGridAc/RoleGridAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/RoleGrid.js"></script>
+    
+      @*加载墓碑区域表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/CemeteryAreaGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/CemeteryAreaGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/CemeteryAreaGridAc/CemeteryAreaGridAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/CemeteryAreaGrid.js"></script>
+    
+     @*加载落葬人表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/BuryManGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/BuryManGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Action/BuryManGridAc/BuryManGridAction.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/BuryManGrid.js"></script>
+    
+     @*加载续交管理表*@
+    <script type="text/javascript" src="~/Content/javascript/Define/Model/RenewManageGridModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/RenewManageGridStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Grid/RenewManageGrid.js"></script>
+
+    @*加载主目录树*@
+      <script type="text/javascript" src="~/Content/javascript/Define/Model/MainItemListTreeModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/MainItemListTreeStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Tree/MainItemListTree.js"></script>
+    
+    @*加载报表统计树*@
+      <script type="text/javascript" src="~/Content/javascript/Define/Model/ExReportListTreeModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/ExReportListTreeStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Tree/ExReportListTree.js"></script>
+     @*加载基础数据维护树*@
+      <script type="text/javascript" src="~/Content/javascript/Define/Model/BaseEnumListTreeModel.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Store/BaseEnumListTreeStore.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/Tree/BaseEnumListTree.js"></script>
+  
+    
+    
+    @*加载通用窗口*@
+    <script type="text/javascript" src="~/Content/javascript/Define/UniversalWindow/SelectCustomerWin.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/UniversalWindow/SelectTombstoneWin.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/UniversalWindow/ImportDataWin.js"></script>
+    <script type="text/javascript" src="~/Content/javascript/Define/UniversalWindow/SelectCemeteryAreaWin.js"></script>
+    
+    
+
+    @*加载页面脚本*@
+    <script type="text/javascript" src="~/Content/javascript/Customer/CustomerJS.js"></script>
+}

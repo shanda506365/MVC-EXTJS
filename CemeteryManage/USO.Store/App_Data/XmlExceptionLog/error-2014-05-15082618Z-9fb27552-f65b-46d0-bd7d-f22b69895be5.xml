@@ -1,0 +1,191 @@
+﻿<error errorId="9fb27552-f65b-46d0-bd7d-f22b69895be5" application="/" host="LYNNCHEN-PC" type="System.InvalidOperationException" message="不应是类型 USO.Store.ViewModels.GridStoreBaseModel`1[[USO.Mvc.Utility.SheetInfoClass, USO.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]。使用 XmlInclude 或 SoapInclude 特性静态指定非已知的类型。" source="System.Xml" detail="System.InvalidOperationException: 生成 XML 文档时出错。 ---&gt; System.InvalidOperationException: 不应是类型 USO.Store.ViewModels.GridStoreBaseModel`1[[USO.Mvc.Utility.SheetInfoClass, USO.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]。使用 XmlInclude 或 SoapInclude 特性静态指定非已知的类型。&#xD;&#xA;   在 System.Xml.Serialization.XmlSerializationWriter.WriteTypedPrimitive(String name, String ns, Object o, Boolean xsiType)&#xD;&#xA;   在 Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationWriterJsonResult.Write1_Object(String n, String ns, Object o, Boolean isNullable, Boolean needType)&#xD;&#xA;   在 Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationWriterJsonResult.Write7_JsonResult(String n, String ns, JsonResult o, Boolean isNullable, Boolean needType)&#xD;&#xA;   在 Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationWriterJsonResult.Write8_JsonResult(Object o)&#xD;&#xA;   --- 内部异常堆栈跟踪的结尾 ---&#xD;&#xA;   在 System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter xmlWriter, Object o, XmlSerializerNamespaces namespaces, String encodingStyle, String id)&#xD;&#xA;   在 System.Xml.Serialization.XmlSerializer.Serialize(TextWriter textWriter, Object o, XmlSerializerNamespaces namespaces)&#xD;&#xA;   在 System.Xml.Serialization.XmlSerializer.Serialize(TextWriter textWriter, Object o)&#xD;&#xA;   在 USO.Domain.Extensions.XmlExtensions.ConvertToString(Object objectToConvert) 位置 g:\Pro\MyBusiness\CemeteryManage\USO.Domain\Extensions\XmlExtensions.cs:行号 45&#xD;&#xA;   在 USO.Store.Controllers.CustomerController.UploadCustomerExcel() 位置 g:\Pro\MyBusiness\CemeteryManage\USO.Store\Controllers\CustomerController.cs:行号 248&#xD;&#xA;   在 lambda_method(Closure , ControllerBase , Object[] )&#xD;&#xA;   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)&#xD;&#xA;   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass42.&lt;BeginInvokeSynchronousActionMethod&gt;b__41()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass8`1.&lt;BeginSynchronous&gt;b__7(IAsyncResult _)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;&gt;c__DisplayClass39.&lt;BeginInvokeActionMethodWithFilters&gt;b__33()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass4f.&lt;InvokeActionMethodFilterAsynchronously&gt;b__49()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;BeginInvokeActionMethodWithFilters&gt;b__36(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass25.&lt;&gt;c__DisplayClass2a.&lt;BeginInvokeAction&gt;b__20()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass25.&lt;BeginInvokeAction&gt;b__22(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Controller.&lt;&gt;c__DisplayClass1d.&lt;BeginExecuteCore&gt;b__18(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClass8.&lt;BeginProcessRequest&gt;b__3(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)&#xD;&#xA;   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2014-05-15T08:26:18.2615482Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:5342&#xD;&#xA;HTTP_CONTENT_TYPE:multipart/form-data; boundary=---------------------------70721826216335&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;HTTP_COOKIE:CNZZDATA5637659=cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1400054636%26cnzz_a%3D17%26sin%3Dhttp%253A%252F%252Flocalhost%253A19100%252FOnlinePayRecharge%26ltime%3D1400054750522%26rtime%3D25; _user_name=wells_admin; RecentlyViewed=38531_74287_38955_62191_88938; fileDownload=true; ASP.NET_SessionId=fcgbgblczigozkp0jxbwcnw5&#xD;&#xA;HTTP_HOST:localhost:48576&#xD;&#xA;HTTP_REFERER:http://localhost:48576/&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Content-Length: 5342&#xD;&#xA;Content-Type: multipart/form-data; boundary=---------------------------70721826216335&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;Cookie: CNZZDATA5637659=cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1400054636%26cnzz_a%3D17%26sin%3Dhttp%253A%252F%252Flocalhost%253A19100%252FOnlinePayRecharge%26ltime%3D1400054750522%26rtime%3D25; _user_name=wells_admin; RecentlyViewed=38531_74287_38955_62191_88938; fileDownload=true; ASP.NET_SessionId=fcgbgblczigozkp0jxbwcnw5&#xD;&#xA;Host: localhost:48576&#xD;&#xA;Referer: http://localhost:48576/&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="G:\Pro\MyBusiness\CemeteryManage\USO.Store\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="WANDONE\lynnchen" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="5342" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="multipart/form-data; boundary=---------------------------70721826216335" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/UploadCustomerExcel" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="G:\Pro\MyBusiness\CemeteryManage\USO.Store\UploadCustomerExcel" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="req=call&amp;callname=importcustomerUp&amp;sessiontoken=null" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/UploadCustomerExcel" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="48576" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/UploadCustomerExcel" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="5342" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="multipart/form-data; boundary=---------------------------70721826216335" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="CNZZDATA5637659=cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1400054636%26cnzz_a%3D17%26sin%3Dhttp%253A%252F%252Flocalhost%253A19100%252FOnlinePayRecharge%26ltime%3D1400054750522%26rtime%3D25; _user_name=wells_admin; RecentlyViewed=38531_74287_38955_62191_88938; fileDownload=true; ASP.NET_SessionId=fcgbgblczigozkp0jxbwcnw5" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:48576" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:48576/" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="req">
+      <value string="call" />
+    </item>
+    <item name="callname">
+      <value string="importcustomerUp" />
+    </item>
+    <item name="sessiontoken">
+      <value string="null" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="CNZZDATA5637659">
+      <value string="cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1400054636%26cnzz_a%3D17%26sin%3Dhttp%253A%252F%252Flocalhost%253A19100%252FOnlinePayRecharge%26ltime%3D1400054750522%26rtime%3D25" />
+    </item>
+    <item name="_user_name">
+      <value string="wells_admin" />
+    </item>
+    <item name="RecentlyViewed">
+      <value string="38531_74287_38955_62191_88938" />
+    </item>
+    <item name="fileDownload">
+      <value string="true" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="fcgbgblczigozkp0jxbwcnw5" />
+    </item>
+  </cookies>
+</error>

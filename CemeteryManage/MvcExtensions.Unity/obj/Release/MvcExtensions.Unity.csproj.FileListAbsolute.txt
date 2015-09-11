@@ -1,0 +1,16 @@
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\bin\Release\MvcExtensions.Unity.dll
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.dll
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\bin\Release\MvcExtensions.dll
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.xml
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\obj\Release\MvcExtensions.Unity.csprojResolveAssemblyReference.cache
+G:\Pro\MyBusiness\CemeteryManage\MvcExtensions.Unity\obj\Release\MvcExtensions.Unity.dll
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\bin\Release\MvcExtensions.Unity.dll
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.dll
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\bin\Release\MvcExtensions.dll
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.xml
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\obj\Release\MvcExtensions.Unity.csprojResolveAssemblyReference.cache
+E:\MyWork\Cemetery\CemeteryManage\MvcExtensions.Unity\obj\Release\MvcExtensions.Unity.dll

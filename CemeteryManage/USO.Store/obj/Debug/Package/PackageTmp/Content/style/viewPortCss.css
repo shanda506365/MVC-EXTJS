@@ -1,0 +1,48 @@
+﻿.viewportMainWestTitle {
+	background-image: url(../images/tree/home.png) !important;
+}
+.delinfax 
+{
+    background-image: url(../images/fax/delete.png) !important;
+	background-repeat: no-repeat !important;
+} 
+
+.add {
+    background-image:url(../images/icons/fam/add.gif) !important;
+}
+.edit {
+     background-image:url(../images/toolbar/page_edit.png) !important;
+}
+.delete {
+    background-image:url(../images/icons/fam/delete.gif) !important;
+}
+.refresh {
+    background-image:url(../images/pub/refresh.png) !important;
+}
+.sort {
+    background-image:url(../images/fax/pageSend.png) !important;
+}
+.addUser {
+    background-image:url(../images/toolbar/user_add.png) !important;
+}
+.export {
+     background-image:url(../images/toolbar/export.png) !important;
+}
+.import {
+     background-image:url(../images/toolbar/import.png) !important;
+}
+.search {
+   background-image:url(../images/pub/search.png) !important; 
+}
+.filedLable {
+	color:#04408C;
+	font-weight:bold;
+}
+
+
+.hospital-target {
+	cursor: default;
+}
+.hospital-target .hospital-target-hover {
+	border: 1px solid red;
+}

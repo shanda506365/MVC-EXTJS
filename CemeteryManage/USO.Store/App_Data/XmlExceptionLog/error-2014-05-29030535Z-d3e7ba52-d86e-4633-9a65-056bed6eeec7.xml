@@ -1,0 +1,197 @@
+﻿<error errorId="d3e7ba52-d86e-4633-9a65-056bed6eeec7" application="/" host="LYNNCHEN-PC" type="System.Web.HttpCompileException" message="c:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_Web_userlogin.cshtml.65793277.6g39nbmg.0.cs(36): error CS0234: 命名空间“USO.Store.ViewModels”中不存在类型或命名空间名称“CustomerViewModel”(是否缺少程序集引用?)" source="System.Web" detail="System.Web.HttpCompileException (0x80004005): c:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_Web_userlogin.cshtml.65793277.6g39nbmg.0.cs(36): error CS0234: 命名空间“USO.Store.ViewModels”中不存在类型或命名空间名称“CustomerViewModel”(是否缺少程序集引用?)&#xD;&#xA;   在 System.Web.Compilation.AssemblyBuilder.Compile()&#xD;&#xA;   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()&#xD;&#xA;   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)&#xD;&#xA;   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)&#xD;&#xA;   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)&#xD;&#xA;   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)&#xD;&#xA;   在 System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)&#xD;&#xA;   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)&#xD;&#xA;   在 System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)&#xD;&#xA;   在 System.Web.Mvc.VirtualPathProviderViewEngine.&lt;&gt;c__DisplayClass4.&lt;GetPathFromGeneralName&gt;b__0(String path)&#xD;&#xA;   在 System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)&#xD;&#xA;   在 System.Web.WebPages.DisplayModeProvider.&lt;&gt;c__DisplayClassb.&lt;GetDisplayInfoForVirtualPath&gt;b__8(IDisplayMode mode)&#xD;&#xA;   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()&#xD;&#xA;   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)&#xD;&#xA;   在 System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)&#xD;&#xA;   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]&amp; searchedLocations)&#xD;&#xA;   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]&amp; searchedLocations)&#xD;&#xA;   在 System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)&#xD;&#xA;   在 System.Web.Mvc.ViewEngineCollection.&lt;&gt;c__DisplayClassc.&lt;FindView&gt;b__b(IViewEngine e)&#xD;&#xA;   在 System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)&#xD;&#xA;   在 System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)&#xD;&#xA;   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)&#xD;&#xA;   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)&#xD;&#xA;   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   在 System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1a.&lt;InvokeActionResultWithFilters&gt;b__17()&#xD;&#xA;   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)&#xD;&#xA;   在 System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1a.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()&#xD;&#xA;   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass25.&lt;&gt;c__DisplayClass2a.&lt;BeginInvokeAction&gt;b__20()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass25.&lt;BeginInvokeAction&gt;b__22(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Controller.&lt;&gt;c__DisplayClass1d.&lt;BeginExecuteCore&gt;b__18(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClass8.&lt;BeginProcessRequest&gt;b__3(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)&#xD;&#xA;   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2014-05-29T03:05:35.5106643Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;编译错误&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;“/”应用程序中的服务器错误。&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;编译错误&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; 说明: &lt;/b&gt;在编译向该请求提供服务所需资源的过程中出现错误。请检查下列特定错误详细信息并适当地修改源代码。&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; 编译器错误消息: &lt;/b&gt;CS0234: 命名空间“USO.Store.ViewModels”中不存在类型或命名空间名称“CustomerViewModel”(是否缺少程序集引用?)&lt;br&gt;&lt;br&gt;&#xD;&#xA;&lt;b&gt;源错误:&lt;/b&gt;&lt;br&gt;&lt;br&gt;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&lt;td&gt;&#xD;&#xA;                              &lt;/td&gt;&lt;/tr&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;行 34:     &#xD;&#xA;行 35:     &#xD;&#xA;&lt;font color=red&gt;行 36:     public class _Page_Views_User_UserLogin_cshtml : System.Web.Mvc.WebViewPage&amp;lt;USO.Store.ViewModels.CustomerViewModel&amp;gt; {&#xD;&#xA;&lt;/font&gt;行 37:         &#xD;&#xA;行 38: #line hidden&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;源文件:&lt;/b&gt; c:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_Web_userlogin.cshtml.65793277.6g39nbmg.0.cs&#xD;&#xA;            &amp;nbsp;&amp;nbsp; &lt;b&gt;行:&lt;/b&gt;  36&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&lt;br&gt;&lt;div class=&quot;expandable&quot; onclick=&quot;OnToggleTOCLevel1('compilerOutputDiv')&quot;&gt;显示详细的编译器输出:&lt;/div&gt;&#xD;&#xA;&lt;div id=&quot;compilerOutputDiv&quot; style=&quot;display: none;&quot;&gt;&#xD;&#xA;            &lt;br&gt;&lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\11.0&amp;gt; &amp;quot;C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe&amp;quot; /t:library /utf8output /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.WebPages.Deployment\v4.0_1.0.0.0__31bf3856ad364e35\System.Web.WebPages.Deployment.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\a82f7b15\a72738ba_7bdece01\AutoMapper.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\fe80ec8d\df5ca72a_e77acf01\USO.Domain.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\6642521a\3f32de3d_816dcf01\MvcExtensions.Unity.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IdentityModel\v4.0_4.0.0.0__b77a5c561934e089\System.IdentityModel.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualStudio.Web.PageInspector.Loader\v4.0_1.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Web.PageInspector.Loader.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Mvc\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Mvc.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\bcf717be\588bb889_5807cf01\Newtonsoft.Json.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\33eb9d9a\00b9f129_a35ecd01\System.Net.Http.Formatting.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\fea30d21\94661809_7c0acf01\AutoMapper.Net4.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\e69b7549\fc5fc6ba_7bdece01\System.Reactive.Interfaces.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\85d1b99a\48d178bc_7bdece01\Microsoft.Practices.Unity.Configuration.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Activities\v4.0_4.0.0.0__31bf3856ad364e35\System.Activities.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Web.Infrastructure\v4.0_1.0.0.0__31bf3856ad364e35\Microsoft.Web.Infrastructure.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\8e00b071\8f7169ba_7bdece01\EntityFramework.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.ApplicationServices\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.ApplicationServices.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\54f9eb24\30f47abc_7bdece01\Microsoft.Practices.Unity.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Activities\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Activities.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Abstractions\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Abstractions.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.WebPages.Razor\v4.0_2.0.0.0__31bf3856ad364e35\System.Web.WebPages.Razor.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\7d471b91\27a55891_d147cf01\UPOPSDK.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\c849f5bf\a93f81ba_7bdece01\log4net.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Razor\v4.0_2.0.0.0__31bf3856ad364e35\System.Web.Razor.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.DynamicData\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.DynamicData.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\8513434b\c361e6bc_7bdece01\NPOI.OpenXml4Net.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Helpers\v4.0_2.0.0.0__31bf3856ad364e35\System.Web.Helpers.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\20120d22\4f50e5bc_7bdece01\NPOI.OOXML.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\7403259a\00a0baba_7bdece01\System.Reactive.Core.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\50c4a5ee\4c77a8ba_7bdece01\MvcSiteMapProvider.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.WebPages\v4.0_2.0.0.0__31bf3856ad364e35\System.Web.WebPages.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Build.Framework\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.Build.Framework.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\63cad42d\486e45ba_7bdece01\Elmah.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\49573518\a183192e_6949cf01\UPOnlineMPIUtilCSharp.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Extensions\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Extensions.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\ce04cd1b\aefaf1bc_7bdece01\NPOI.OpenXmlFormats.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Web\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.WebPages.Deployment\v4.0_2.0.0.0__31bf3856ad364e35\System.Web.WebPages.Deployment.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\38fe2cda\825bc0f0_e97acf01\USO.Store.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\6372664a\395e12bb_7bdece01\System.Reactive.PlatformServices.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_global.asax.p2w8nnt0.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\643963e7\e75d933c_816dcf01\MvcExtensions.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\8f6b18e2\fb9f4c2b_e77acf01\USO.Dto.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\6d1e58e3\60ae76bc_7bdece01\Telerik.Web.Mvc.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\9c01b202\75cff3bc_7bdece01\Lucene.Net.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Activation\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Activation.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualStudio.Web.PageInspector.Runtime\v4.0_1.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Web.PageInspector.Runtime.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Routing\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Routing.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\77955755\0161aebc_7bdece01\PanGu.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\98e888fc\06c2e2ba_7bdece01\System.Reactive.Linq.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\94f16fe6\a213e6bc_7bdece01\ICSharpCode.SharpZipLib.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\fdd65f2a\8d8f35ba_7bdece01\Microsoft.Practices.ServiceLocation.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\fc14ea76\03e0ac2d_e77acf01\USO.Mvc.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.WorkflowServices\v4.0_4.0.0.0__31bf3856ad364e35\System.WorkflowServices.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\26c484e2\47d0fcbc_7bdece01\NPOI.dll&amp;quot; /R:&amp;quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\1f61cf55\cf98da2c_e77acf01\USO.Infrastructure.dll&amp;quot; /R:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\assembly\dl3\d9385332\fcdb543d_816dcf01\USO.Core.dll&amp;quot; /out:&amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_Web_userlogin.cshtml.65793277.6g39nbmg.dll&amp;quot; /D:DEBUG /debug+ /optimize- /w:4 /nowarn:1659;1699;1701;612;618 /warnaserror-  &amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_Web_userlogin.cshtml.65793277.6g39nbmg.0.cs&amp;quot; &amp;quot;C:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_Web_userlogin.cshtml.65793277.6g39nbmg.1.cs&amp;quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Microsoft(R) Visual C# 编译器版本 4.0.30319.17929&#xD;&#xA;&#xD;&#xA;用于 Microsoft(R) .NET Framework 4.5&#xD;&#xA;版权所有 (C) Microsoft Corporation。保留所有权利。&#xD;&#xA;&#xD;&#xA;c:\Users\lynnchen\AppData\Local\Temp\Temporary ASP.NET Files\root\ecc056d5\e32abf48\App_Web_userlogin.cshtml.65793277.6g39nbmg.0.cs(36,102): error CS0234: 命名空间“USO.Store.ViewModels”中不存在类型或命名空间名称“CustomerViewModel”(是否缺少程序集引用?)&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&lt;div class=&quot;expandable&quot; onclick=&quot;OnToggleTOCLevel1('dynamicCodeDiv')&quot;&gt;显示完整的编译源:&lt;/div&gt;&#xD;&#xA;&lt;div id=&quot;dynamicCodeDiv&quot; style=&quot;display: none;&quot;&gt;&#xD;&#xA;            &lt;br&gt;&lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;行 1:    #pragma checksum &amp;quot;G:\Pro\MyBusiness\CemeteryManage\USO.Store\Views\User\UserLogin.cshtml&amp;quot; &amp;quot;{ff1816ec-aa5e-4d10-87f7-6f4963833460}&amp;quot; &amp;quot;A99B31AC4A5D7483525CCF6F27A2AAAE3058548F&amp;quot;&#xD;行 2:    //------------------------------------------------------------------------------&#xD;行 3:    // &amp;lt;auto-generated&amp;gt;&#xD;行 4:    //     此代码由工具生成。&#xD;行 5:    //     运行时版本:4.0.30319.17929&#xD;行 6:    //&#xD;行 7:    //     对此文件的更改可能会导致不正确的行为，并且如果&#xD;行 8:    //     重新生成代码，这些更改将会丢失。&#xD;行 9:    // &amp;lt;/auto-generated&amp;gt;&#xD;行 10:   //------------------------------------------------------------------------------&#xD;行 11:   &#xD;行 12:   namespace ASP {&#xD;行 13:       using System;&#xD;行 14:       using System.Collections.Generic;&#xD;行 15:       using System.IO;&#xD;行 16:       using System.Linq;&#xD;行 17:       using System.Net;&#xD;行 18:       using System.Web;&#xD;行 19:       using System.Web.Helpers;&#xD;行 20:       using System.Web.Security;&#xD;行 21:       using System.Web.UI;&#xD;行 22:       using System.Web.WebPages;&#xD;行 23:       using System.Web.Mvc;&#xD;行 24:       using System.Web.Mvc.Ajax;&#xD;行 25:       using System.Web.Mvc.Html;&#xD;行 26:       using System.Web.Routing;&#xD;行 27:       using Telerik.Web.Mvc;&#xD;行 28:       using Telerik.Web.Mvc.UI;&#xD;行 29:       using USO.Mvc.Html;&#xD;行 30:       using USO.Domain;&#xD;行 31:       using USO.Dto;&#xD;行 32:       using MvcSiteMapProvider.Web.Html;&#xD;行 33:       using MvcSiteMapProvider.Web.Html.Models;&#xD;行 34:       &#xD;行 35:       &#xD;行 36:       public class _Page_Views_User_UserLogin_cshtml : System.Web.Mvc.WebViewPage&amp;lt;USO.Store.ViewModels.CustomerViewModel&amp;gt; {&#xD;行 37:           &#xD;行 38:   #line hidden&#xD;行 39:           &#xD;行 40:           public _Page_Views_User_UserLogin_cshtml() {&#xD;行 41:           }&#xD;行 42:           &#xD;行 43:           protected ASP.global_asax ApplicationInstance {&#xD;行 44:               get {&#xD;行 45:                   return ((ASP.global_asax)(Context.ApplicationInstance));&#xD;行 46:               }&#xD;行 47:           }&#xD;行 48:           &#xD;行 49:           public override void Execute() {&#xD;行 50:   BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 0, 2, true);&#xD;行 51:   &#xD;行 52:   WriteLiteral(&amp;quot;\r\n&amp;quot;);&#xD;行 53:   &#xD;行 54:   EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 0, 2, true);&#xD;行 55:   &#xD;行 56:               &#xD;行 57:               #line 2 &amp;quot;G:\Pro\MyBusiness\CemeteryManage\USO.Store\Views\User\UserLogin.cshtml&amp;quot;&#xD;行 58:     &#xD;行 59:       ViewBag.Title = &amp;quot;皇恩寺陵园系统&amp;quot;;&#xD;行 60:       Layout = &amp;quot;~/Views/Shared/_Stage.cshtml&amp;quot;;&#xD;行 61:   &#xD;行 62:               &#xD;行 63:               #line default&#xD;行 64:               #line hidden&#xD;行 65:   BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 85, 4, true);&#xD;行 66:   &#xD;行 67:   WriteLiteral(&amp;quot;\r\n\r\n&amp;quot;);&#xD;行 68:   &#xD;行 69:   EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 85, 4, true);&#xD;行 70:   &#xD;行 71:   DefineSection(&amp;quot;TitleContent&amp;quot;, () =&amp;gt; {&#xD;行 72:   &#xD;行 73:   BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 158, 15, true);&#xD;行 74:   &#xD;行 75:   WriteLiteral(&amp;quot;\r\n    皇恩寺陵园系统\r\n&amp;quot;);&#xD;行 76:   &#xD;行 77:   EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 158, 15, true);&#xD;行 78:   &#xD;行 79:   });&#xD;行 80:   &#xD;行 81:   BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 176, 2, true);&#xD;行 82:   &#xD;行 83:   WriteLiteral(&amp;quot;\r\n&amp;quot;);&#xD;行 84:   &#xD;行 85:   EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 176, 2, true);&#xD;行 86:   &#xD;行 87:   DefineSection(&amp;quot;StyleContent&amp;quot;, () =&amp;gt; {&#xD;行 88:   &#xD;行 89:   BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 200, 8, true);&#xD;行 90:   &#xD;行 91:   WriteLiteral(&amp;quot;\r\n    \r\n&amp;quot;);&#xD;行 92:   &#xD;行 93:   EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 200, 8, true);&#xD;行 94:   &#xD;行 95:   });&#xD;行 96:   &#xD;行 97:   BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 211, 2, true);&#xD;行 98:   &#xD;行 99:   WriteLiteral(&amp;quot;\r\n&amp;quot;);&#xD;行 100:  &#xD;行 101:  EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 211, 2, true);&#xD;行 102:  &#xD;行 103:  DefineSection(&amp;quot;ScriptTopContent&amp;quot;, () =&amp;gt; {&#xD;行 104:  &#xD;行 105:  BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 239, 7, true);&#xD;行 106:  &#xD;行 107:  WriteLiteral(&amp;quot;\r\n     &amp;quot;);&#xD;行 108:  &#xD;行 109:  EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 239, 7, true);&#xD;行 110:  &#xD;行 111:  BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 257, 13, true);&#xD;行 112:  &#xD;行 113:  WriteLiteral(&amp;quot;\r\n    &amp;lt;script&amp;quot;);&#xD;行 114:  &#xD;行 115:  EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 257, 13, true);&#xD;行 116:  &#xD;行 117:  BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 270, 23, true);&#xD;行 118:  &#xD;行 119:  WriteLiteral(&amp;quot; type=\&amp;quot;text/javascript\&amp;quot;&amp;quot;);&#xD;行 120:  &#xD;行 121:  EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 270, 23, true);&#xD;行 122:  &#xD;行 123:  WriteAttribute(&amp;quot;src&amp;quot;, Tuple.Create(&amp;quot; src=\&amp;quot;&amp;quot;, 293), Tuple.Create(&amp;quot;\&amp;quot;&amp;quot;, 332)&#xD;行 124:  , Tuple.Create(Tuple.Create(&amp;quot;&amp;quot;, 299), Tuple.Create&amp;lt;System.Object, System.Int32&amp;gt;(Href(&amp;quot;~/Content/javascript/UserLogin.js&amp;quot;)&#xD;行 125:  , 299), false)&#xD;行 126:  );&#xD;行 127:  &#xD;行 128:  BeginContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 333, 12, true);&#xD;行 129:  &#xD;行 130:  WriteLiteral(&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\r\n&amp;quot;);&#xD;行 131:  &#xD;行 132:  EndContext(&amp;quot;~/Views/User/UserLogin.cshtml&amp;quot;, 333, 12, true);&#xD;行 133:  &#xD;行 134:  });&#xD;行 135:  &#xD;行 136:          }&#xD;行 137:      }&#xD;行 138:  }&#xD;行 139:  &lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;    &lt;script type=&quot;text/javascript&quot;&gt;&#xD;&#xA;    function OnToggleTOCLevel1(level2ID)&#xD;&#xA;    {&#xD;&#xA;      var elemLevel2 = document.getElementById(level2ID);&#xD;&#xA;      if (elemLevel2.style.display == 'none')&#xD;&#xA;      {&#xD;&#xA;        elemLevel2.style.display = '';&#xD;&#xA;      }&#xD;&#xA;      else {&#xD;&#xA;        elemLevel2.style.display = 'none';&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;    &lt;/script&gt;&#xD;&#xA;                          &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;HTTP_COOKIE:CNZZDATA5637659=cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1401154275%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A22892%252FModifyPassword%26ltime%3D1401154783685%26rtime%3D28; _user_name=wells_admin; RecentlyViewed=38531_74287_38955_62191_88938; userId=fBjxq/Ke/nw=; username=undefined; login_username=admin; login_password=0c28362919d52507eee175a9733b8681; login_checksavepass=1; ASP.NET_SessionId=rsbnw3bkpljtz4zkogj2yovj; login_sessiontoken=11966afe-9cf9-4b9d-9b97-ec50045bcd5d&#xD;&#xA;HTTP_HOST:localhost:48576&#xD;&#xA;HTTP_REFERER:http://localhost:48576/UserLogin?RedirectPath=http://localhost:48576/Index&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;Cookie: CNZZDATA5637659=cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1401154275%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A22892%252FModifyPassword%26ltime%3D1401154783685%26rtime%3D28; _user_name=wells_admin; RecentlyViewed=38531_74287_38955_62191_88938; userId=fBjxq/Ke/nw=; username=undefined; login_username=admin; login_password=0c28362919d52507eee175a9733b8681; login_checksavepass=1; ASP.NET_SessionId=rsbnw3bkpljtz4zkogj2yovj; login_sessiontoken=11966afe-9cf9-4b9d-9b97-ec50045bcd5d&#xD;&#xA;Host: localhost:48576&#xD;&#xA;Referer: http://localhost:48576/UserLogin?RedirectPath=http://localhost:48576/Index&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="G:\Pro\MyBusiness\CemeteryManage\USO.Store\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="WANDONE\lynnchen" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/UserLogin" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="G:\Pro\MyBusiness\CemeteryManage\USO.Store\UserLogin" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="RedirectPath=http://localhost:48576/Index" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/UserLogin" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="48576" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/UserLogin" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="CNZZDATA5637659=cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1401154275%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A22892%252FModifyPassword%26ltime%3D1401154783685%26rtime%3D28; _user_name=wells_admin; RecentlyViewed=38531_74287_38955_62191_88938; userId=fBjxq/Ke/nw=; username=undefined; login_username=admin; login_password=0c28362919d52507eee175a9733b8681; login_checksavepass=1; ASP.NET_SessionId=rsbnw3bkpljtz4zkogj2yovj; login_sessiontoken=11966afe-9cf9-4b9d-9b97-ec50045bcd5d" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:48576" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:48576/UserLogin?RedirectPath=http://localhost:48576/Index" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="RedirectPath">
+      <value string="http://localhost:48576/Index" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="CNZZDATA5637659">
+      <value string="cnzz_eid%3D3206848-1396334701-http%253A%252F%252Flocalhost%253A33875%252F%26ntime%3D1401154275%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A22892%252FModifyPassword%26ltime%3D1401154783685%26rtime%3D28" />
+    </item>
+    <item name="_user_name">
+      <value string="wells_admin" />
+    </item>
+    <item name="RecentlyViewed">
+      <value string="38531_74287_38955_62191_88938" />
+    </item>
+    <item name="userId">
+      <value string="fBjxq/Ke/nw=" />
+    </item>
+    <item name="username">
+      <value string="undefined" />
+    </item>
+    <item name="login_username">
+      <value string="admin" />
+    </item>
+    <item name="login_password">
+      <value string="0c28362919d52507eee175a9733b8681" />
+    </item>
+    <item name="login_checksavepass">
+      <value string="1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="rsbnw3bkpljtz4zkogj2yovj" />
+    </item>
+    <item name="login_sessiontoken">
+      <value string="11966afe-9cf9-4b9d-9b97-ec50045bcd5d" />
+    </item>
+  </cookies>
+</error>

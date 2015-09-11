@@ -1,0 +1,119 @@
+﻿@using USO.Store.Security
+@{
+    ViewBag.Title = "账户管理中心";
+    Layout = "~/Views/Shared/_Stage.cshtml";
+}
+@section TitleContent
+{
+       @RenderSection("TitleContent", required: false)
+}
+@section StyleContent{
+    <link rel="stylesheet" href="@Url.Content("~/Content/style/frame/jquery-ui.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/style/frame/acBase.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/javascript/accenter/jquery.loadmask.css")"  type="text/css" />
+     <link rel="stylesheet" href="@Url.Content("~/Content/style/accenter/payment.css")" />
+    @RenderSection("StyleContent", required: false)
+}
+
+@section ScriptContent{
+    <script type="text/javascript" src="@Url.Content("~/Content/javascript/accenter/jquery.loadmask.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/javascript/frame/jquery-ui-1.9.2.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/javascript/accenter/acBase.js")"></script>
+    @RenderSection("ScriptContent", required: false)
+}
+
+@section HeadSiteMap{
+    @RenderSection("HeadSiteMap", required: false)
+}
+
+
+
+
+<div class="mainContent clearfix">
+    <div class="leftDiv" style="position: relative; float: left; width: 207px;">
+
+        <ul id="menu" class="ui-menu ui-widget ui-widget-content ui-corner-all" style="width: 100%;">
+            <li class="myurltitle"><span>
+                <p style="padding-bottom: 4px;">账户管理中心</p>
+            </span></li>
+            <li class="myulheader">&nbsp;<span class="myulheaderLingX">&nbsp;&nbsp;&nbsp;</span>账户信息</li>
+            <li>
+                <table style="width: 100%; background-color: #FFFAF3; line-height: 23px;">
+                    <tr>
+                        <td rowspan="4" style="vertical-align: top; padding-top: 13px; padding-bottom: 12px;">
+                            <img src="~/Content/style/img/UserLog.png" /></td>
+                    </tr>
+                    <tr>
+                        <td class="UserInfo" style="vertical-align: top; padding-top: 13px;">欢迎 @ViewData["AcUserName"]</td>
+                    </tr>
+                    <tr>
+                        <td class="UserInfo">当前角色：@Html.Action("GetUser", "CustomDetailInfo")</td>
+                    </tr>
+                    <tr>
+                        <td class="normal" style="padding: 0px 0px 12px 12px;">
+                            &nbsp;
+                            @* <a href="#">
+                                <img src="~/Content/images/accenter/UserLevel.png" style="margin: -2px auto;" />查看用户等级说明</a>*@
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li class="myulheader">&nbsp;<span class="myulheaderLingX">&nbsp;&nbsp;&nbsp;</span>我的账户</li>
+            <li class="myulitem ui-menu-item"><a id="CustomDetailInfo" href="@Url.Action("Index", "CustomDetailInfo")">账户首页</a></li>
+            <li class="ui-menu-item"><a id="SOQuery" href="@Url.Action("Index", "SOQuery")">我的订单</a></li>
+            <li class="ui-menu-item"><a id="PolicyNotify" href="@Url.Action("Index", "PolicyNotify")">政策通知</a></li>
+            <li class="ui-menu-item"><a id="CustomCredit" href="@Url.Action("Index", "CustomCredit")">可用金额</a></li>
+            <li class="ui-menu-item"><a id="CustomPayment" href="@Url.Action("Index", "CustomPayment")">付款信息</a></li>
+           @*  <li class="ui-menu-item"><a id="CustomInvoice" href="@Url.Action("Index", "CustomInvoice")">发票信息</a></li>*@
+            <li class="ui-menu-item"><a id="CustomRebate" href="@Url.Action("Index", "CustomRebate")">返利信息</a></li>
+             <li class="ui-menu-item"><a id="ObligateProduct" href="@Url.Action("Index", "ObligateProduct")">预留产品</a></li>
+            <li class="ui-menu-item"><a id="CustomerProducts" href="@Url.Action("MyCustomerProduct", "Products")">我的产品</a></li>
+            
+            <li class="ui-menu-item"><a id="CustomerFavorite" href="@Url.Action("Index", "CustomerFavorite")">我的收藏</a></li>
+            @if (ViewData["AcUserRole"] != null && ViewData["AcUserRole"].ToString() == "true")
+            {
+                <li class="ui-menu-item"><a id="CustomerSubAcount" href="@Url.Action("Index", "CustomerSubAcount")">子帐号管理</a></li>
+            }
+            <li class="ui-menu-item dhidden"><a id="OnlinePay" href="@Url.Action("Recharge", "OnlinePay")">在线充值</a></li>
+
+            <li class="myulheader" style="margin: 5px auto;">&nbsp;<span class="myulheaderLingX">&nbsp;&nbsp;&nbsp;</span>我的进销存管理</li>
+            @if (ViewData["AcUserRole"] != null && ViewData["AcUserRole"].ToString() != "true")
+            {
+                <li class="ui-menu-item"><a id="CustomerStockSearch" href="@Url.Action("Search", "CustomerStock")">库存查询</a></li>
+            }
+            @if (ViewData["AcUserRole"] != null && ViewData["AcUserRole"].ToString() == "true")
+            {
+                <li class="ui-menu-item"><a id="CustomerStock" href="@Url.Action("Index", "CustomerStock")">库存管理</a></li>
+                 <li class="ui-menu-item"><a id="InventoryDocument" href="@Url.Action("Index", "InventoryDocument")">单据管理</a></li>
+                <li class="ui-menu-item"><a id="CustomerSales" href="@Url.Action("Index", "CustomerSales")">分销管理</a></li>
+                @*<li class="ui-menu-item"><a id="CustomOrder" href="@Url.Action("Index", "CustomOrder")">分销订单</a></li>*@
+                <li class="ui-menu-item"><a id="CustomerReceiptStorage" href="@Url.Action("Index", "CustomerReceiptStorage")">收货入库</a></li>
+            }
+            <li class="ui-menu-item"><a id="CustomerRetail" href="@Url.Action("Index", "CustomerRetail")">零售管理</a></li>
+             @if (ViewData["AcUserRole"] != null && ViewData["AcUserRole"].ToString() == "true")
+             {
+                 <li class="ui-menu-item"><a id="CustomerQuickBuy" href="@Url.Action("Index", "QuickBuy")">快速购买</a></li>
+
+          @*  <li class="myulheader" style="margin: 5px auto;">&nbsp;<span class="myulheaderLingX">&nbsp;&nbsp;&nbsp;</span>收藏夹</li>*@
+                 if (Html.Action("GetCustomerLegalType", "QuickBuy").ToString().Contains("CustomerRetail"))
+                  {
+                      <li class="ui-menu-item"><a id="CustomerQuickBuy3" href="@Url.Action("Index", "QuickBuy", new {type = 1})">零售直销</a></li>
+                  }
+             }
+        </ul>
+
+    </div>
+    <div class="rightDiv" style="position: relative; float: right; width: 758px;">
+        @RenderBody()
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+

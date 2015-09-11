@@ -1,0 +1,251 @@
+﻿<error errorId="0bddd6bc-cdb6-4a9d-9fac-aeaf0cbed58a" application="/" host="LYNNCHEN-PC" type="System.Web.HttpException" message="不允许用于访问路径“/null”的 HTTP 谓词 POST。" source="System.Web" detail="System.Web.HttpException (0x80004005): 不允许用于访问路径“/null”的 HTTP 谓词 POST。&#xD;&#xA;   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)&#xD;&#xA;   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2014-06-17T05:58:55.6070533Z" statusCode="405">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:no-cache&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_PRAGMA:no-cache&#xD;&#xA;HTTP_CONTENT_LENGTH:45&#xD;&#xA;HTTP_CONTENT_TYPE:application/x-www-form-urlencoded; charset=UTF-8&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;HTTP_COOKIE:login_username=admin; login_password=0c28362919d52507eee175a9733b8681; login_checksavepass=1; ext-northStateId=o%3Acollapsed%3Ds%253Atop; ext-westStateId=o%3A; ext-CustomerGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A11-Id%255Eo%25253Aid%25253Ds%2525253A11-FullName%255Eo%25253Aid%25253Ds%2525253A11-CustomerTypeName%255Eo%25253Aid%25253Ds%2525253A11-CustomerStatusName%255Eo%25253Aid%25253Ds%2525253A11-BuryDate%255Eo%25253Aid%25253Ds%2525253A11-Telephone%255Eo%25253Aid%25253Ds%2525253A11-IDNumber%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-TombstoneGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A22-Id%255Eo%25253Aid%25253Ds%2525253A22-Name%255Eo%25253Aid%25253Ds%2525253A22-Alias%255Eo%25253Aid%25253Ds%2525253A22-AreaEntity%255Eo%25253Aid%25253Ds%2525253A22-SortNum%255Eo%25253Aid%25253Ds%2525253A22-BuyDate%255Eo%25253Aid%25253Ds%2525253A22-ExpiryDate%255Eo%25253Aid%25253Ds%2525253A22-SecurityLevelName%255Eo%25253Aid%25253Ds%2525253A22-ServiceLevelName%255Eo%25253Aid%25253Ds%2525253A22-PaymentStatusEntity%5Esort%3Do%253Aproperty%253Ds%25253AExpiryDate%255Edirection%253Ds%25253AASC%255Eroot%253Ds%25253Adata; ext-UserGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A33-Id%255Eo%25253Aid%25253Ds%2525253A33-Name%255Eo%25253Aid%25253Ds%2525253A33-DepartmentEntity%255Eo%25253Aid%25253Ds%2525253A33-LoginName%255Eo%25253Aid%25253Ds%2525253A33-RoleDtosString%255Eo%25253Aid%25253Ds%2525253A33-Code%255Eo%25253Aid%25253Ds%2525253A33-StatusString%255Eo%25253Aid%25253Ds%2525253A33-Remark%255Eo%25253Aid%25253Ds%2525253A33-Position%255Eo%25253Aid%25253Ds%2525253A33-CreateDate%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-SysLogGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A44-Id%255Eo%25253Aid%25253Ds%2525253A44-TypeString%255Eo%25253Aid%25253Ds%2525253A44-ControlName%255Eo%25253Aid%25253Ds%2525253A44-UserEntity%255Eo%25253Aid%25253Ds%2525253A44-Date%255Eo%25253Aid%25253Ds%2525253A44-Content%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-RoleGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A55-Id%255Eo%25253Aid%25253Ds%2525253A55-Name%255Eo%25253Aid%25253Ds%2525253A55-FunctionsString%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-centercenterStateId=o%3A; ext-centersouthStateId=o%3A; ext-centerStateId=o%3A; ext-southStateId=o%3A; CNZZDATA5637659=cnzz_eid%3D1059287802-1402448769-%26ntime%3D1402974411; _user_name=cy_admin; userId=fBjxq/Ke/nw=; user_name=WueN7KkGSH4NTfceeH2ccg==; __RequestVerificationToken=iSO-PzkfqziP8WIzuSp-0xCELsczghfA4T4EXFLpxv5FQz2oBI2DzcQ2U-Z_mr4a1y1h0WcN3VKuaGMGVCvsbMKIM5g8Oa3zXSrZnNpAGcF2ZT-pb5rOWGsox9k1; ASP.NET_SessionId=sobdcd2m1qmdaw1iquoc2qh0; login_sessiontoken=7dc66799-d7f6-4714-8435-35d601c63ca0&#xD;&#xA;HTTP_HOST:localhost:48576&#xD;&#xA;HTTP_REFERER:http://localhost:48576/Index&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0&#xD;&#xA;HTTP_AJAXCALL:true&#xD;&#xA;HTTP_X_REQUESTED_WITH:XMLHttpRequest&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: no-cache&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Pragma: no-cache&#xD;&#xA;Content-Length: 45&#xD;&#xA;Content-Type: application/x-www-form-urlencoded; charset=UTF-8&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;Cookie: login_username=admin; login_password=0c28362919d52507eee175a9733b8681; login_checksavepass=1; ext-northStateId=o%3Acollapsed%3Ds%253Atop; ext-westStateId=o%3A; ext-CustomerGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A11-Id%255Eo%25253Aid%25253Ds%2525253A11-FullName%255Eo%25253Aid%25253Ds%2525253A11-CustomerTypeName%255Eo%25253Aid%25253Ds%2525253A11-CustomerStatusName%255Eo%25253Aid%25253Ds%2525253A11-BuryDate%255Eo%25253Aid%25253Ds%2525253A11-Telephone%255Eo%25253Aid%25253Ds%2525253A11-IDNumber%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-TombstoneGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A22-Id%255Eo%25253Aid%25253Ds%2525253A22-Name%255Eo%25253Aid%25253Ds%2525253A22-Alias%255Eo%25253Aid%25253Ds%2525253A22-AreaEntity%255Eo%25253Aid%25253Ds%2525253A22-SortNum%255Eo%25253Aid%25253Ds%2525253A22-BuyDate%255Eo%25253Aid%25253Ds%2525253A22-ExpiryDate%255Eo%25253Aid%25253Ds%2525253A22-SecurityLevelName%255Eo%25253Aid%25253Ds%2525253A22-ServiceLevelName%255Eo%25253Aid%25253Ds%2525253A22-PaymentStatusEntity%5Esort%3Do%253Aproperty%253Ds%25253AExpiryDate%255Edirection%253Ds%25253AASC%255Eroot%253Ds%25253Adata; ext-UserGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A33-Id%255Eo%25253Aid%25253Ds%2525253A33-Name%255Eo%25253Aid%25253Ds%2525253A33-DepartmentEntity%255Eo%25253Aid%25253Ds%2525253A33-LoginName%255Eo%25253Aid%25253Ds%2525253A33-RoleDtosString%255Eo%25253Aid%25253Ds%2525253A33-Code%255Eo%25253Aid%25253Ds%2525253A33-StatusString%255Eo%25253Aid%25253Ds%2525253A33-Remark%255Eo%25253Aid%25253Ds%2525253A33-Position%255Eo%25253Aid%25253Ds%2525253A33-CreateDate%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-SysLogGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A44-Id%255Eo%25253Aid%25253Ds%2525253A44-TypeString%255Eo%25253Aid%25253Ds%2525253A44-ControlName%255Eo%25253Aid%25253Ds%2525253A44-UserEntity%255Eo%25253Aid%25253Ds%2525253A44-Date%255Eo%25253Aid%25253Ds%2525253A44-Content%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-RoleGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A55-Id%255Eo%25253Aid%25253Ds%2525253A55-Name%255Eo%25253Aid%25253Ds%2525253A55-FunctionsString%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-centercenterStateId=o%3A; ext-centersouthStateId=o%3A; ext-centerStateId=o%3A; ext-southStateId=o%3A; CNZZDATA5637659=cnzz_eid%3D1059287802-1402448769-%26ntime%3D1402974411; _user_name=cy_admin; userId=fBjxq/Ke/nw=; user_name=WueN7KkGSH4NTfceeH2ccg==; __RequestVerificationToken=iSO-PzkfqziP8WIzuSp-0xCELsczghfA4T4EXFLpxv5FQz2oBI2DzcQ2U-Z_mr4a1y1h0WcN3VKuaGMGVCvsbMKIM5g8Oa3zXSrZnNpAGcF2ZT-pb5rOWGsox9k1; ASP.NET_SessionId=sobdcd2m1qmdaw1iquoc2qh0; login_sessiontoken=7dc66799-d7f6-4714-8435-35d601c63ca0&#xD;&#xA;Host: localhost:48576&#xD;&#xA;Referer: http://localhost:48576/Index&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0&#xD;&#xA;AJaxCall: true&#xD;&#xA;X-Requested-With: XMLHttpRequest&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="G:\Pro\MyBusiness\CemeteryManage\USO.Store\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="WANDONE\lynnchen" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="45" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded; charset=UTF-8" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/null" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="G:\Pro\MyBusiness\CemeteryManage\USO.Store\null" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/null" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="48576" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/null" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="no-cache" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_PRAGMA">
+      <value string="no-cache" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="45" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded; charset=UTF-8" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="login_username=admin; login_password=0c28362919d52507eee175a9733b8681; login_checksavepass=1; ext-northStateId=o%3Acollapsed%3Ds%253Atop; ext-westStateId=o%3A; ext-CustomerGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A11-Id%255Eo%25253Aid%25253Ds%2525253A11-FullName%255Eo%25253Aid%25253Ds%2525253A11-CustomerTypeName%255Eo%25253Aid%25253Ds%2525253A11-CustomerStatusName%255Eo%25253Aid%25253Ds%2525253A11-BuryDate%255Eo%25253Aid%25253Ds%2525253A11-Telephone%255Eo%25253Aid%25253Ds%2525253A11-IDNumber%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-TombstoneGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A22-Id%255Eo%25253Aid%25253Ds%2525253A22-Name%255Eo%25253Aid%25253Ds%2525253A22-Alias%255Eo%25253Aid%25253Ds%2525253A22-AreaEntity%255Eo%25253Aid%25253Ds%2525253A22-SortNum%255Eo%25253Aid%25253Ds%2525253A22-BuyDate%255Eo%25253Aid%25253Ds%2525253A22-ExpiryDate%255Eo%25253Aid%25253Ds%2525253A22-SecurityLevelName%255Eo%25253Aid%25253Ds%2525253A22-ServiceLevelName%255Eo%25253Aid%25253Ds%2525253A22-PaymentStatusEntity%5Esort%3Do%253Aproperty%253Ds%25253AExpiryDate%255Edirection%253Ds%25253AASC%255Eroot%253Ds%25253Adata; ext-UserGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A33-Id%255Eo%25253Aid%25253Ds%2525253A33-Name%255Eo%25253Aid%25253Ds%2525253A33-DepartmentEntity%255Eo%25253Aid%25253Ds%2525253A33-LoginName%255Eo%25253Aid%25253Ds%2525253A33-RoleDtosString%255Eo%25253Aid%25253Ds%2525253A33-Code%255Eo%25253Aid%25253Ds%2525253A33-StatusString%255Eo%25253Aid%25253Ds%2525253A33-Remark%255Eo%25253Aid%25253Ds%2525253A33-Position%255Eo%25253Aid%25253Ds%2525253A33-CreateDate%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-SysLogGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A44-Id%255Eo%25253Aid%25253Ds%2525253A44-TypeString%255Eo%25253Aid%25253Ds%2525253A44-ControlName%255Eo%25253Aid%25253Ds%2525253A44-UserEntity%255Eo%25253Aid%25253Ds%2525253A44-Date%255Eo%25253Aid%25253Ds%2525253A44-Content%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-RoleGridState=o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A55-Id%255Eo%25253Aid%25253Ds%2525253A55-Name%255Eo%25253Aid%25253Ds%2525253A55-FunctionsString%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata; ext-centercenterStateId=o%3A; ext-centersouthStateId=o%3A; ext-centerStateId=o%3A; ext-southStateId=o%3A; CNZZDATA5637659=cnzz_eid%3D1059287802-1402448769-%26ntime%3D1402974411; _user_name=cy_admin; userId=fBjxq/Ke/nw=; user_name=WueN7KkGSH4NTfceeH2ccg==; __RequestVerificationToken=iSO-PzkfqziP8WIzuSp-0xCELsczghfA4T4EXFLpxv5FQz2oBI2DzcQ2U-Z_mr4a1y1h0WcN3VKuaGMGVCvsbMKIM5g8Oa3zXSrZnNpAGcF2ZT-pb5rOWGsox9k1; ASP.NET_SessionId=sobdcd2m1qmdaw1iquoc2qh0; login_sessiontoken=7dc66799-d7f6-4714-8435-35d601c63ca0" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:48576" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:48576/Index" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0" />
+    </item>
+    <item name="HTTP_AJAXCALL">
+      <value string="true" />
+    </item>
+    <item name="HTTP_X_REQUESTED_WITH">
+      <value string="XMLHttpRequest" />
+    </item>
+  </serverVariables>
+  <form>
+    <item name="sessiontoken">
+      <value string="" />
+    </item>
+    <item name="req">
+      <value string="call" />
+    </item>
+    <item name="callname">
+      <value string="LoadFunctions" />
+    </item>
+  </form>
+  <cookies>
+    <item name="login_username">
+      <value string="admin" />
+    </item>
+    <item name="login_password">
+      <value string="0c28362919d52507eee175a9733b8681" />
+    </item>
+    <item name="login_checksavepass">
+      <value string="1" />
+    </item>
+    <item name="ext-northStateId">
+      <value string="o%3Acollapsed%3Ds%253Atop" />
+    </item>
+    <item name="ext-westStateId">
+      <value string="o%3A" />
+    </item>
+    <item name="ext-CustomerGridState">
+      <value string="o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A11-Id%255Eo%25253Aid%25253Ds%2525253A11-FullName%255Eo%25253Aid%25253Ds%2525253A11-CustomerTypeName%255Eo%25253Aid%25253Ds%2525253A11-CustomerStatusName%255Eo%25253Aid%25253Ds%2525253A11-BuryDate%255Eo%25253Aid%25253Ds%2525253A11-Telephone%255Eo%25253Aid%25253Ds%2525253A11-IDNumber%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata" />
+    </item>
+    <item name="ext-TombstoneGridState">
+      <value string="o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A22-Id%255Eo%25253Aid%25253Ds%2525253A22-Name%255Eo%25253Aid%25253Ds%2525253A22-Alias%255Eo%25253Aid%25253Ds%2525253A22-AreaEntity%255Eo%25253Aid%25253Ds%2525253A22-SortNum%255Eo%25253Aid%25253Ds%2525253A22-BuyDate%255Eo%25253Aid%25253Ds%2525253A22-ExpiryDate%255Eo%25253Aid%25253Ds%2525253A22-SecurityLevelName%255Eo%25253Aid%25253Ds%2525253A22-ServiceLevelName%255Eo%25253Aid%25253Ds%2525253A22-PaymentStatusEntity%5Esort%3Do%253Aproperty%253Ds%25253AExpiryDate%255Edirection%253Ds%25253AASC%255Eroot%253Ds%25253Adata" />
+    </item>
+    <item name="ext-UserGridState">
+      <value string="o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A33-Id%255Eo%25253Aid%25253Ds%2525253A33-Name%255Eo%25253Aid%25253Ds%2525253A33-DepartmentEntity%255Eo%25253Aid%25253Ds%2525253A33-LoginName%255Eo%25253Aid%25253Ds%2525253A33-RoleDtosString%255Eo%25253Aid%25253Ds%2525253A33-Code%255Eo%25253Aid%25253Ds%2525253A33-StatusString%255Eo%25253Aid%25253Ds%2525253A33-Remark%255Eo%25253Aid%25253Ds%2525253A33-Position%255Eo%25253Aid%25253Ds%2525253A33-CreateDate%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata" />
+    </item>
+    <item name="ext-SysLogGridState">
+      <value string="o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A44-Id%255Eo%25253Aid%25253Ds%2525253A44-TypeString%255Eo%25253Aid%25253Ds%2525253A44-ControlName%255Eo%25253Aid%25253Ds%2525253A44-UserEntity%255Eo%25253Aid%25253Ds%2525253A44-Date%255Eo%25253Aid%25253Ds%2525253A44-Content%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata" />
+    </item>
+    <item name="ext-RoleGridState">
+      <value string="o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253A55-Id%255Eo%25253Aid%25253Ds%2525253A55-Name%255Eo%25253Aid%25253Ds%2525253A55-FunctionsString%5Esort%3Do%253Aproperty%253Ds%25253AId%255Edirection%253Ds%25253ADESC%255Eroot%253Ds%25253Adata" />
+    </item>
+    <item name="ext-centercenterStateId">
+      <value string="o%3A" />
+    </item>
+    <item name="ext-centersouthStateId">
+      <value string="o%3A" />
+    </item>
+    <item name="ext-centerStateId">
+      <value string="o%3A" />
+    </item>
+    <item name="ext-southStateId">
+      <value string="o%3A" />
+    </item>
+    <item name="CNZZDATA5637659">
+      <value string="cnzz_eid%3D1059287802-1402448769-%26ntime%3D1402974411" />
+    </item>
+    <item name="_user_name">
+      <value string="cy_admin" />
+    </item>
+    <item name="userId">
+      <value string="fBjxq/Ke/nw=" />
+    </item>
+    <item name="user_name">
+      <value string="WueN7KkGSH4NTfceeH2ccg==" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="iSO-PzkfqziP8WIzuSp-0xCELsczghfA4T4EXFLpxv5FQz2oBI2DzcQ2U-Z_mr4a1y1h0WcN3VKuaGMGVCvsbMKIM5g8Oa3zXSrZnNpAGcF2ZT-pb5rOWGsox9k1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="sobdcd2m1qmdaw1iquoc2qh0" />
+    </item>
+    <item name="login_sessiontoken">
+      <value string="7dc66799-d7f6-4714-8435-35d601c63ca0" />
+    </item>
+  </cookies>
+</error>

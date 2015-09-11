@@ -1,0 +1,212 @@
+﻿<error errorId="a20a0d4c-0d9d-4869-8495-14b03d48eb0a" application="/" host="LYNNCHEN-PC" type="System.ArgumentNullException" message="值不能为 null。&#xD;&#xA;参数名: String" source="mscorlib" detail="System.ArgumentNullException: 值不能为 null。&#xD;&#xA;参数名: String&#xD;&#xA;   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)&#xD;&#xA;   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)&#xD;&#xA;   在 System.Int32.Parse(String s)&#xD;&#xA;   在 USO.Store.Controllers.CustomerSalesAddController.UpdateCustomerSaleDetail() 位置 f:\TSFProject\USO_B2B\02_Code\ControlPanel\USO\USO.Store\Controllers\CustomerSalesAddController.cs:行号 449&#xD;&#xA;   在 lambda_method(Closure , ControllerBase , Object[] )&#xD;&#xA;   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)&#xD;&#xA;   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass42.&lt;BeginInvokeSynchronousActionMethod&gt;b__41()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass8`1.&lt;BeginSynchronous&gt;b__7(IAsyncResult _)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;&gt;c__DisplayClass39.&lt;BeginInvokeActionMethodWithFilters&gt;b__33()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass4f.&lt;InvokeActionMethodFilterAsynchronously&gt;b__49()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;BeginInvokeActionMethodWithFilters&gt;b__36(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass25.&lt;&gt;c__DisplayClass2a.&lt;BeginInvokeAction&gt;b__20()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass25.&lt;BeginInvokeAction&gt;b__22(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Controller.&lt;&gt;c__DisplayClass1d.&lt;BeginExecuteCore&gt;b__18(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClass8.&lt;BeginProcessRequest&gt;b__3(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass4.&lt;MakeVoidDelegate&gt;b__3(IAsyncResult ar)&#xD;&#xA;   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)&#xD;&#xA;   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2014-03-31T08:11:19.0044989Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:no-cache&#xD;&#xA;HTTP_CONNECTION:Keep-Alive&#xD;&#xA;HTTP_CONTENT_LENGTH:41&#xD;&#xA;HTTP_CONTENT_TYPE:application/x-www-form-urlencoded; charset=UTF-8&#xD;&#xA;HTTP_ACCEPT:*/*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:zh-cn&#xD;&#xA;HTTP_COOKIE:CNZZDATA5637659=cnzz_eid%3D196894569-1381554851-http%253A%252F%252Flocalhost%26ntime%3D1396253374%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A33875%252FCustomerSales%26ltime%3D1396253221865%26rtime%3D27; WD_CLocation=p6wGbr/fsIc=; defaultLoginCheckCode=876d9a03-72c9-42c9-bd25-dfd11c85f462; CNZZDATA3299691=cnzz_eid%3D594446672-1386819196-http%253A%252F%252Flocalhost%26ntime%3D1387270355%26cnzz_a%3D9%26ltime%3D1387261999428%26rtime%3D2; CNZZDATA1996164=cnzz_eid%3D260097414-1392100118-http%253A%252F%252Flocalhost%253A9728%252F%26ntime%3D1392100118%26cnzz_a%3D0%26sin%3Dhttp%253A%252F%252Flocalhost%253A9728%252F%26ltime%3D1392100027958; user_name=WueN7KkGSH4NTfceeH2ccg==; _user_name=admin5_admin; userId=fBjxq/Ke/nw=; __RequestVerificationToken=hQ40tegLwW1Gu1LQknF1Tb_KXkysxOpQzvPUk0OaWHf8pDKhXe0L2-SahZEFB9Xro4JUz4cg_BHNRuIokP7xbKV8sodh0wdroet-8xurBU7uGra0mr-7D1RjDt01&#xD;&#xA;HTTP_HOST:localhost:33875&#xD;&#xA;HTTP_REFERER:http://localhost:33875/CustomerSalesAdd?sid=280&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)&#xD;&#xA;HTTP_X_REQUESTED_WITH:XMLHttpRequest&#xD;&#xA;HTTP_UA_CPU:AMD64&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: no-cache&#xD;&#xA;Connection: Keep-Alive&#xD;&#xA;Content-Length: 41&#xD;&#xA;Content-Type: application/x-www-form-urlencoded; charset=UTF-8&#xD;&#xA;Accept: */*&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: zh-cn&#xD;&#xA;Cookie: CNZZDATA5637659=cnzz_eid%3D196894569-1381554851-http%253A%252F%252Flocalhost%26ntime%3D1396253374%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A33875%252FCustomerSales%26ltime%3D1396253221865%26rtime%3D27; WD_CLocation=p6wGbr/fsIc=; defaultLoginCheckCode=876d9a03-72c9-42c9-bd25-dfd11c85f462; CNZZDATA3299691=cnzz_eid%3D594446672-1386819196-http%253A%252F%252Flocalhost%26ntime%3D1387270355%26cnzz_a%3D9%26ltime%3D1387261999428%26rtime%3D2; CNZZDATA1996164=cnzz_eid%3D260097414-1392100118-http%253A%252F%252Flocalhost%253A9728%252F%26ntime%3D1392100118%26cnzz_a%3D0%26sin%3Dhttp%253A%252F%252Flocalhost%253A9728%252F%26ltime%3D1392100027958; user_name=WueN7KkGSH4NTfceeH2ccg==; _user_name=admin5_admin; userId=fBjxq/Ke/nw=; __RequestVerificationToken=hQ40tegLwW1Gu1LQknF1Tb_KXkysxOpQzvPUk0OaWHf8pDKhXe0L2-SahZEFB9Xro4JUz4cg_BHNRuIokP7xbKV8sodh0wdroet-8xurBU7uGra0mr-7D1RjDt01&#xD;&#xA;Host: localhost:33875&#xD;&#xA;Referer: http://localhost:33875/CustomerSalesAdd?sid=280&#xD;&#xA;User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)&#xD;&#xA;X-Requested-With: XMLHttpRequest&#xD;&#xA;UA-CPU: AMD64&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="F:\TSFProject\USO_B2B\02_Code\ControlPanel\USO\USO.Store\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="WANDONE\lynnchen" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="41" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded; charset=UTF-8" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/CustomerSalesAdd/UpdateCustomerSaleDetail/" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="F:\TSFProject\USO_B2B\02_Code\ControlPanel\USO\USO.Store\CustomerSalesAdd\UpdateCustomerSaleDetail" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/CustomerSalesAdd/UpdateCustomerSaleDetail/" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="33875" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/CustomerSalesAdd/UpdateCustomerSaleDetail/" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="no-cache" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="Keep-Alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="41" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded; charset=UTF-8" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="*/*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="zh-cn" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="CNZZDATA5637659=cnzz_eid%3D196894569-1381554851-http%253A%252F%252Flocalhost%26ntime%3D1396253374%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A33875%252FCustomerSales%26ltime%3D1396253221865%26rtime%3D27; WD_CLocation=p6wGbr/fsIc=; defaultLoginCheckCode=876d9a03-72c9-42c9-bd25-dfd11c85f462; CNZZDATA3299691=cnzz_eid%3D594446672-1386819196-http%253A%252F%252Flocalhost%26ntime%3D1387270355%26cnzz_a%3D9%26ltime%3D1387261999428%26rtime%3D2; CNZZDATA1996164=cnzz_eid%3D260097414-1392100118-http%253A%252F%252Flocalhost%253A9728%252F%26ntime%3D1392100118%26cnzz_a%3D0%26sin%3Dhttp%253A%252F%252Flocalhost%253A9728%252F%26ltime%3D1392100027958; user_name=WueN7KkGSH4NTfceeH2ccg==; _user_name=admin5_admin; userId=fBjxq/Ke/nw=; __RequestVerificationToken=hQ40tegLwW1Gu1LQknF1Tb_KXkysxOpQzvPUk0OaWHf8pDKhXe0L2-SahZEFB9Xro4JUz4cg_BHNRuIokP7xbKV8sodh0wdroet-8xurBU7uGra0mr-7D1RjDt01" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:33875" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:33875/CustomerSalesAdd?sid=280" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)" />
+    </item>
+    <item name="HTTP_X_REQUESTED_WITH">
+      <value string="XMLHttpRequest" />
+    </item>
+    <item name="HTTP_UA_CPU">
+      <value string="AMD64" />
+    </item>
+  </serverVariables>
+  <form>
+    <item name="saleDetailId">
+      <value string="392" />
+    </item>
+    <item name="Quantity">
+      <value string="1" />
+    </item>
+    <item name="Price">
+      <value string="2300.00" />
+    </item>
+  </form>
+  <cookies>
+    <item name="CNZZDATA5637659">
+      <value string="cnzz_eid%3D196894569-1381554851-http%253A%252F%252Flocalhost%26ntime%3D1396253374%26cnzz_a%3D3%26sin%3Dhttp%253A%252F%252Flocalhost%253A33875%252FCustomerSales%26ltime%3D1396253221865%26rtime%3D27" />
+    </item>
+    <item name="WD_CLocation">
+      <value string="p6wGbr/fsIc=" />
+    </item>
+    <item name="defaultLoginCheckCode">
+      <value string="876d9a03-72c9-42c9-bd25-dfd11c85f462" />
+    </item>
+    <item name="CNZZDATA3299691">
+      <value string="cnzz_eid%3D594446672-1386819196-http%253A%252F%252Flocalhost%26ntime%3D1387270355%26cnzz_a%3D9%26ltime%3D1387261999428%26rtime%3D2" />
+    </item>
+    <item name="CNZZDATA1996164">
+      <value string="cnzz_eid%3D260097414-1392100118-http%253A%252F%252Flocalhost%253A9728%252F%26ntime%3D1392100118%26cnzz_a%3D0%26sin%3Dhttp%253A%252F%252Flocalhost%253A9728%252F%26ltime%3D1392100027958" />
+    </item>
+    <item name="user_name">
+      <value string="WueN7KkGSH4NTfceeH2ccg==" />
+    </item>
+    <item name="_user_name">
+      <value string="admin5_admin" />
+    </item>
+    <item name="userId">
+      <value string="fBjxq/Ke/nw=" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="hQ40tegLwW1Gu1LQknF1Tb_KXkysxOpQzvPUk0OaWHf8pDKhXe0L2-SahZEFB9Xro4JUz4cg_BHNRuIokP7xbKV8sodh0wdroet-8xurBU7uGra0mr-7D1RjDt01" />
+    </item>
+  </cookies>
+</error>
